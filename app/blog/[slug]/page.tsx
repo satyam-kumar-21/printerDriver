@@ -40,7 +40,7 @@ export default async function ArticlePage({
         readTime={article.readTime}
       />
 
-      <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-white pb-20">
+      <section className="relative overflow-hidden bg-linear-to-br from-sky-50 via-white to-white pb-20">
         {/* Background Effects */}
         <div className="absolute inset-0">
           <div className="absolute left-[-10%] top-0 h-96 w-96 rounded-full bg-blue-200/30 blur-[140px]" />
@@ -60,9 +60,9 @@ export default async function ArticlePage({
 
         <div className="relative mx-auto max-w-5xl px-4 sm:px-6">
           {/* Article Card */}
-          <div className="overflow-hidden rounded-[32px] border border-slate-200 bg-white shadow-xl shadow-slate-200/40">
+          <div className="overflow-hidden rounded-4xl border border-slate-200 bg-white shadow-xl shadow-slate-200/40">
             {/* Banner */}
-            <div className="relative h-72 overflow-hidden bg-gradient-to-br from-blue-600 via-sky-500 to-cyan-500 sm:h-96">
+            <div className="relative h-72 overflow-hidden bg-linear-to-br from-blue-600 via-sky-500 to-cyan-500 sm:h-96">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.25),transparent_40%)]" />
 
               <div className="absolute bottom-8 left-8">
