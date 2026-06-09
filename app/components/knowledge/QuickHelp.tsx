@@ -1,5 +1,7 @@
 import React from "react";
+import Link from "next/link";
 import {
+  ArrowRight,
   Printer,
   ScanLine,
   Monitor,
@@ -16,48 +18,56 @@ const helpCards = [
     issue: "Printer stuck or 'offline'",
     desc: "Clear the print queue, power-cycle the printer, and reinstall full driver package.",
     icon: Printer,
+    href: "/drivers/printer-drivers",
   },
   {
     title: "Scanner",
     issue: "Scanner not detected",
     desc: "Install full multifunction package, not print-only driver.",
     icon: ScanLine,
+    href: "/drivers/scanner-drivers",
   },
   {
     title: "Display",
     issue: "Screen flickers or goes black",
     desc: "Usually a graphics driver issue. Roll back or clean install stable driver.",
     icon: Monitor,
+    href: "/drivers/graphics-drivers",
   },
   {
     title: "Audio",
     issue: "No sound coming out",
     desc: "Check default output device, then reinstall audio driver from OEM.",
     icon: Volume2,
+    href: "/drivers/audio-drivers",
   },
   {
     title: "Wi-Fi",
     issue: "Wi-Fi drops constantly",
     desc: "Disable power saving for adapter and update driver from laptop maker.",
     icon: Wifi,
+    href: "/drivers/network-drivers",
   },
   {
     title: "Bluetooth",
     issue: "Bluetooth won't pair",
     desc: "Remove old entry, re-pair fresh, update driver, disable power saving.",
     icon: Bluetooth,
+    href: "/drivers/bluetooth-drivers",
   },
   {
     title: "USB",
     issue: "USB device not recognised",
     desc: "Try different cable/port, reinstall USB + device drivers.",
     icon: Usb,
+    href: "/drivers/usb-drivers",
   },
   {
     title: "System",
     issue: "Computer slow after update",
     desc: "Updates may replace tuned drivers with generic ones.",
     icon: Cpu,
+    href: "/drivers/troubleshooting",
   },
 ];
 
@@ -95,39 +105,39 @@ function QuickHelp() {
             const Icon = item.icon;
 
             return (
-              <div
+              <Link
                 key={index}
-                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
+                href={item.href}
+                className="group relative overflow-hidden rounded-xl sm:rounded-2xl lg:rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-200"
               >
                 {/* glow */}
                 <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-500/10 blur-3xl" />
+                  <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-cyan-500/10 blur-3xl" />
                 </div>
 
                 <div className="relative">
-                  {/* icon */}
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-linear-to-br from-blue-600 to-sky-500 shadow-lg shadow-blue-200/50">
-                    <Icon className="h-5 w-5 text-white" />
+                  <div className="mb-4 sm:mb-6 flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-xl sm:rounded-2xl bg-linear-to-br from-blue-600 to-sky-500 shadow-lg shadow-blue-200/40">
+                    <Icon className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                   </div>
 
-                  {/* content */}
-                  <h3 className="mt-5 text-lg font-semibold text-slate-900">
+                  <h3 className="mb-2 sm:mb-3 text-base sm:text-lg lg:text-xl font-semibold text-slate-900">
                     {item.title}
                   </h3>
 
-                  <p className="mt-2 text-sm font-medium text-slate-700">
+                  <p className="mb-3 text-sm font-medium text-slate-700">
                     {item.issue}
                   </p>
 
-                  <p className="mt-4 text-sm leading-6 text-slate-600">
+                  <p className="mb-4 sm:mb-6 text-xs sm:text-sm leading-6 sm:leading-7 text-slate-600">
                     {item.desc}
                   </p>
 
-                  <button className="mt-6 text-sm font-semibold text-blue-600 hover:text-blue-700">
-                    Read the overview →
-                  </button>
+                  <div className="flex items-center gap-2 text-sm font-medium text-blue-600">
+                    Read the overview
+                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>
