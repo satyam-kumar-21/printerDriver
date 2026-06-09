@@ -1,10 +1,12 @@
 "use client"
 
 import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { ArrowUp } from "lucide-react";
 
 function ScrollToTop() {
   const [visible, setVisible] = useState(false);
+  const pathname = usePathname();
 
   // show button after scroll
   useEffect(() => {
@@ -19,6 +21,14 @@ function ScrollToTop() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // scroll to top on route change
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "auto",
+    });
+  }, [pathname]);
 
   // scroll to top
   const scrollTop = () => {
