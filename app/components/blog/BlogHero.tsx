@@ -52,7 +52,7 @@ export default function BlogHero() {
             </div>
 
             {/* Heading */}
-            <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 max-w-4xl text-3xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-4xl lg:text-5xl xl:text-6xl">
               Friendly, Useful Reads About
               <span className="block bg-gradient-to-r from-blue-600 to-sky-500 bg-clip-text text-transparent">
                 How Your Computer Actually Works
@@ -60,7 +60,7 @@ export default function BlogHero() {
             </h1>
 
             {/* Description */}
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+            <p className="mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
               Plain-English articles, calm knowledge, and the occasional
               <span className="font-medium text-slate-800">
                 {" "}

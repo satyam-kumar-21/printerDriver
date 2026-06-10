@@ -29,7 +29,7 @@ export default function KnowledgeHero() {
         />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
           {/* Left Content */}
           <div>
@@ -56,7 +56,7 @@ export default function KnowledgeHero() {
             </div>
 
             {/* Heading */}
-            <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 max-w-4xl text-3xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-4xl lg:text-5xl xl:text-6xl">
               Take a Breath.
               <span className="block bg-gradient-to-r from-blue-600 to-sky-500 bg-clip-text text-transparent">
                 Most Driver Problems Have a Simple Fix.
@@ -64,7 +64,7 @@ export default function KnowledgeHero() {
             </h1>
 
             {/* Description */}
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+            <p className="mt-5 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
               A calm, ordered walkthrough for the most common driver
               problems. Start with universal fixes, then find your
               symptom and follow a clear, practical routine without

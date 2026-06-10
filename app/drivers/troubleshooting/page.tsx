@@ -1,3 +1,10 @@
+import { constructMetadata } from '@/app/utils/seo';
+
+export const metadata = constructMetadata({
+  title: 'Troubleshooting - DriverWise Guides',
+  description: 'Clear, plain-English guides and troubleshooting steps for troubleshooting on Windows and other operating systems.',
+});
+
 import React from 'react'
 import Link from 'next/link'
 import { Wrench, AlertCircle, Zap } from 'lucide-react'

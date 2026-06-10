@@ -31,11 +31,11 @@ export default function LatestArticle() {
             Latest Articles
           </span>
 
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2 className="mt-4 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
             Fresh Reads From The Driver Blog
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600 sm:text-lg">
+          <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
             Bite-sized, friendly, and always written by humans who enjoy this
             stuff.
           </p>
@@ -71,7 +71,7 @@ export default function LatestArticle() {
                   <span>{article.readTime}</span>
                 </div>
 
-                <Link href={`/blog/${article.slug}`} className="mt-4 block text-2xl font-semibold leading-tight text-slate-900 transition hover:text-blue-600">
+                <Link href={`/blog/${article.slug}`} className="mt-4 block text-lg font-semibold leading-snug text-slate-900 transition hover:text-blue-600 sm:text-xl">
                   {article.title}
                 </Link>
 

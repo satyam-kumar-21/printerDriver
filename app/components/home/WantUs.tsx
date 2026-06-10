@@ -22,7 +22,7 @@ export default function WantUs() {
 
           {/* Content */}
           <div className="text-center">
-            <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-5xl font-bold tracking-tight text-slate-900">
+            <h2 className="text-xl font-bold tracking-tight text-slate-900 sm:text-2xl lg:text-3xl xl:text-4xl">
               Want us to explain
               <span className="block bg-linear-to-r from-blue-600 to-sky-500 bg-clip-text text-transparent">
                 another driver topic?

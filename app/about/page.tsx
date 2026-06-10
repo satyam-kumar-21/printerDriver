@@ -1,11 +1,28 @@
+import { constructMetadata } from '@/app/utils/seo';
+
+export const metadata = constructMetadata({
+  title: 'About - DriverWise',
+  description: 'Learn more about about at DriverWise. We provide clear, plain-English advice and troubleshooting steps for device drivers.',
+});
+
 import React from 'react'
 import AboutHero from '../components/about/AboutHero'
 import WantUs from '../components/home/WantUs'
 import AboutContent from '../components/about/AboutContent'
+import JsonLd from '../components/seo/JsonLd'
 
 function page() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'About DriverWise',
+    description: 'Learn more about the DriverWise mission to provide clear, plain-English advice and troubleshooting steps for device drivers.',
+    url: 'https://driverwise.com/about/',
+  };
+
   return (
     <>
+    <JsonLd data={jsonLd} />
     <AboutHero />
     <AboutContent />
     <WantUs />

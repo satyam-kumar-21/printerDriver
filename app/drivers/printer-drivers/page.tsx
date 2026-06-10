@@ -1,3 +1,10 @@
+import { constructMetadata } from '@/app/utils/seo';
+
+export const metadata = constructMetadata({
+  title: 'Printer Drivers - DriverWise Guides',
+  description: 'Clear, plain-English guides and troubleshooting steps for printer drivers on Windows and other operating systems.',
+});
+
 import React from 'react'
 import Link from 'next/link'
 import { Printer, AlertCircle, Zap } from 'lucide-react'

@@ -14,10 +14,10 @@ export default function Footer() {
 
       <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
         {/* Top */}
-        <div className="grid gap-8 sm:gap-10 lg:gap-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1.2fr]">
+        <div className="grid gap-8 sm:gap-10 lg:gap-12 grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1.2fr]">
           
           {/* Brand */}
-          <div className="sm:col-span-2 lg:col-span-1">
+          <div className="col-span-2 lg:col-span-1">
             <div className="mb-4 sm:mb-5 flex items-center gap-2 sm:gap-3">
               <div className="flex h-9 w-9 sm:h-11 sm:w-11 items-center justify-center rounded-xl sm:rounded-2xl bg-linear-to-br from-blue-600 to-sky-500 shadow-lg shadow-blue-200/40 shrink-0">
                 <Printer className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
 
           {/* Site Links */}
-          <div>
+          <div className="col-span-1">
             <h3 className="mb-3 sm:mb-5 text-xs font-semibold uppercase tracking-wider text-slate-900">
               Site Links
             </h3>
@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
 
           {/* Driver Categories */}
-          <div>
+          <div className="col-span-1">
             <h3 className="mb-3 sm:mb-5 text-xs font-semibold uppercase tracking-wider text-slate-900">
               Driver Overviews
             </h3>
@@ -98,7 +98,7 @@ export default function Footer() {
           </div>
 
           {/* Legal */}
-          <div>
+          <div className="col-span-1">
             <h3 className="mb-3 sm:mb-5 text-xs font-semibold uppercase tracking-wider text-slate-900">
               Legal
             </h3>
@@ -126,7 +126,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="sm:col-span-2 lg:col-span-1">
+          <div className="col-span-1 lg:col-span-1">
             <h3 className="mb-3 sm:mb-5 text-xs font-semibold uppercase tracking-wider text-slate-900">
               Get In Touch
             </h3>

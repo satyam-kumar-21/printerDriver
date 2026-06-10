@@ -1,3 +1,10 @@
+import { constructMetadata } from '@/app/utils/seo';
+
+export const metadata = constructMetadata({
+  title: 'Network Drivers - DriverWise Guides',
+  description: 'Clear, plain-English guides and troubleshooting steps for network drivers on Windows and other operating systems.',
+});
+
 import React from 'react'
 import Link from 'next/link'
 import { Wifi, Zap, Power } from 'lucide-react'

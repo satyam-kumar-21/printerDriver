@@ -21,7 +21,7 @@ export default function DriversHero() {
         />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
           {/* Left */}
           <div>
@@ -48,7 +48,7 @@ export default function DriversHero() {
             </div>
 
             {/* Heading */}
-            <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 max-w-4xl text-3xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-4xl lg:text-5xl xl:text-6xl">
               Every Driver Family,
               <span className="block bg-gradient-to-r from-blue-600 to-sky-500 bg-clip-text text-transparent">
                 Explained in Plain English
@@ -56,7 +56,7 @@ export default function DriversHero() {
             </h1>
 
             {/* Description */}
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+            <p className="mt-5 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
               Drivers are simply translators between your software and
               your hardware. Explore each driver category to understand
               what it does, why it matters, and how to keep it working

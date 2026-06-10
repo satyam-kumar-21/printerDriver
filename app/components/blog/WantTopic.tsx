@@ -36,14 +36,14 @@ export default function WantTopic() {
                 </span>
               </div>
 
-              <h2 className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+              <h2 className="mt-6 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
                 Want a Topic
                 <span className="block bg-gradient-to-r from-blue-600 to-sky-500 bg-clip-text text-transparent">
                   Covered?
                 </span>
               </h2>
 
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+              <p className="mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
                 Drop us a line with a question, a confused symptom, or a topic
                 you wish someone would just explain plainly. We pick reader
                 questions for new articles all the time.

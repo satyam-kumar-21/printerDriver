@@ -19,7 +19,7 @@ export default function EditorsPick() {
                         Editor's Pick
                     </span>
 
-                    <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+                    <h2 className="mt-4 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
                         This Week's Featured Read
                     </h2>
                 </div>
@@ -42,11 +42,11 @@ export default function EditorsPick() {
 
                                 {/* Main Content */}
                                 <div className="py-12">
-                                    <h3 className="text-4xl font-bold leading-tight text-white lg:text-5xl">
+                                    <h3 className="text-2xl font-bold leading-tight text-white sm:text-3xl lg:text-4xl">
                                         Understanding Drivers
                                     </h3>
 
-                                    <p className="mt-5 max-w-md text-lg leading-8 text-blue-50">
+                                    <p className="mt-4 max-w-md text-base leading-7 text-blue-50 sm:text-lg">
                                         Learn the simple idea behind every driver.
                                         Software speaks one language, hardware speaks another,
                                         and drivers connect the two.
@@ -104,11 +104,11 @@ export default function EditorsPick() {
                                     </span>
                                 </div>
 
-                                <h3 className="text-3xl font-bold leading-tight text-slate-900">
+                                <h3 className="text-xl font-bold leading-tight text-slate-900 sm:text-2xl lg:text-3xl">
                                     What Is a Driver, Really? A Five-Minute Friendly Explainer
                                 </h3>
 
-                                <p className="mt-6 text-lg leading-8 text-slate-600">
+                                <p className="mt-5 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
                                     Forget the jargon — a driver is just a translator between
                                     your computer and the hardware connected to it. This piece
                                     starts with the core idea and works outward, until you have a

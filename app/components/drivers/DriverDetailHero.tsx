@@ -60,7 +60,7 @@ export default function DriverDetailHero({ title, breadcrumbs = [], intro, image
         />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
             <div className="mb-6 flex items-center gap-2 text-sm text-slate-500">
@@ -90,11 +90,11 @@ export default function DriverDetailHero({ title, breadcrumbs = [], intro, image
               </span>
             </div>
 
-            <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 max-w-4xl text-3xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-4xl lg:text-5xl xl:text-6xl">
               {title}
             </h1>
 
-            {intro && <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">{intro}</p>}
+            {intro && <p className="mt-5 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">{intro}</p>}
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a href="#overview" className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-blue-600 to-sky-500 px-6 py-4 font-semibold text-white shadow-lg shadow-blue-200/50 transition-all duration-300 hover:-translate-y-1">

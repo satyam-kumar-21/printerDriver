@@ -1,3 +1,10 @@
+import { constructMetadata } from '@/app/utils/seo';
+
+export const metadata = constructMetadata({
+  title: 'Accessibility - DriverWise',
+  description: 'Learn more about accessibility at DriverWise. We provide clear, plain-English advice and troubleshooting steps for device drivers.',
+});
+
 import React from 'react'
 import LegalPolicyHero from '../components/legel-policy/LegalPolicyHero'
 import AccessibilityStatementContent from './AccessibilityStatementContent'

@@ -6,6 +6,18 @@
   --surface: #ffffff;
   --surface-muted: #f1f9ff;
   --border: #dbeafe;
+
+  /* Typography Scale — consistent across all pages */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.25rem;    /* 20px */
+  --text-2xl:  1.5rem;     /* 24px */
+  --text-3xl:  1.875rem;   /* 30px */
+  --text-4xl:  2.25rem;    /* 36px */
+  --text-5xl:  3rem;       /* 48px */
+  --text-6xl:  3.75rem;    /* 60px */
 }
 
 @theme inline {
@@ -22,11 +34,14 @@
   }
 }
 
+/* ===== BASE STYLES ===== */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -35,4 +50,106 @@ html {
 
 body {
   overflow-x: hidden;
+}
+
+/* ===== GLOBAL TYPOGRAPHY TOKENS ===== */
+/* These ensure h1/h2/h3/p are consistent wherever used */
+
+/* Page hero H1 — used on all hero sections */
+.hero-h1 {
+  font-size: clamp(2rem, 5vw, 3.75rem);   /* 32px → 60px */
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+/* Section H2 — used in section headings */
+.section-h2 {
+  font-size: clamp(1.75rem, 4vw, 3rem);   /* 28px → 48px */
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: #0f172a;
+}
+
+/* Article content H2 */
+.article-h2 {
+  font-size: clamp(1.375rem, 2.5vw, 1.875rem);  /* 22px → 30px */
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: #020617;
+}
+
+/* Card headings H3 */
+.card-h3 {
+  font-size: 1rem;         /* 16px */
+  font-weight: 600;
+  line-height: 1.5;
+  color: #0f172a;
+}
+
+/* Lead paragraph — hero excerpts */
+.lead-p {
+  font-size: clamp(1rem, 2vw, 1.125rem); /* 16px → 18px */
+  line-height: 1.75;
+  color: #475569;
+}
+
+/* Body paragraph — general use */
+.body-p {
+  font-size: 1rem;          /* 16px */
+  line-height: 1.75;
+  color: #64748b;
+}
+
+/* Small meta text */
+.meta-text {
+  font-size: 0.875rem;     /* 14px */
+  color: #94a3b8;
+}
+
+/* ===== ARTICLE PROSE ===== */
+.article-prose {
+  line-height: 1.85;
+  color: #334155;
+}
+
+.article-prose h2 {
+  font-size: clamp(1.375rem, 2.5vw, 1.875rem);
+  font-weight: 700;
+  color: #020617;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.article-prose p {
+  font-size: 1.0625rem;    /* 17px — optimal reading size */
+  line-height: 1.85;
+  color: #334155;
+  margin: 0;
+}
+
+/* ===== FOCUS / ACCESSIBILITY ===== */
+:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }

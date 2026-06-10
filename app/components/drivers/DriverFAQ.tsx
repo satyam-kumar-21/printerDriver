@@ -49,7 +49,7 @@ export default function DriverFAQ({
                         {badge}
                     </span>
 
-                    <h2 className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+                    <h2 className="mt-6 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
                         {title}
                     </h2>
 

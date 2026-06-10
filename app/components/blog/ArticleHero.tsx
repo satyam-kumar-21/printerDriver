@@ -24,7 +24,7 @@ export default function ArticleHero({
   readTime,
 }: ArticleHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-white py-16 lg:py-24">
+    <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-white py-16 sm:py-20 lg:py-28">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute left-[-10%] top-[-10%] h-96 w-96 rounded-full bg-blue-200/40 blur-[120px]" />
@@ -75,12 +75,12 @@ export default function ArticleHero({
             </div>
 
             {/* Title */}
-            <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 max-w-4xl text-3xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-4xl lg:text-5xl xl:text-6xl">
               {title}
             </h1>
 
             {/* Description */}
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
+            <p className="mt-5 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
               {excerpt}
             </p>
 

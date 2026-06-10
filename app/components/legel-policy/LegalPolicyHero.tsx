@@ -60,7 +60,7 @@ export default function LegalPolicyHero({
           </div>
 
           {/* Title */}
-          <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-blue-600">
+          <h1 className="mt-5 text-2xl font-bold tracking-tight text-blue-600 sm:text-3xl lg:text-4xl xl:text-5xl">
             {title}
           </h1>
 

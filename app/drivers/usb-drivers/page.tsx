@@ -1,3 +1,10 @@
+import { constructMetadata } from '@/app/utils/seo';
+
+export const metadata = constructMetadata({
+  title: 'Usb Drivers - DriverWise Guides',
+  description: 'Clear, plain-English guides and troubleshooting steps for usb drivers on Windows and other operating systems.',
+});
+
 import React from 'react'
 import Link from 'next/link'
 import { Usb, Zap, AlertCircle } from 'lucide-react'
