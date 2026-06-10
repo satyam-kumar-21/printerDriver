@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { articles, type Article } from "../../../data/articles";
+import { blogArticles } from "@/app/data/blog";
 
 export default function LatestArticle() {
   return (
@@ -43,52 +43,53 @@ export default function LatestArticle() {
 
         {/* Articles Grid */}
         <div className="grid gap-6 lg:grid-cols-3">
-          {articles.map((article: Article) => (
+          {blogArticles.map((article) => (
             <article
               key={article.slug}
               className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
             >
-              {/* Card Header */}
-              <div className="relative h-56 overflow-hidden bg-linear-to-br from-blue-100 via-sky-100 to-white">
-                <div className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-600 backdrop-blur">
-                  {article.category}
-                </div>
+              <Link href={`/blog/${article.slug}`} className="block">
+                <div className="relative h-64 overflow-hidden bg-slate-100">
+                  <img
+                    src={article.image}
+                    alt={article.imageAlt}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
 
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="rounded-3xl border border-white/60 bg-white/70 px-8 py-5 shadow-lg backdrop-blur">
-                    <p className="text-lg font-bold text-blue-600">
-                      DriverWise
-                    </p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
 
-                    <p className="text-sm text-slate-500">
-                      Knowledge Article
-                    </p>
+                  <div className="absolute left-4 top-4 rounded-full bg-slate-900/90 px-3 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-white">
+                    {article.category}
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              {/* Content */}
               <div className="p-6">
-                <p className="text-sm text-slate-500">
-                  {article.category} · {article.readTime}
-                </p>
+                <div className="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.24em] text-slate-500">
+                  <span>{article.published}</span>
+                  <span>•</span>
+                  <span>{article.readTime}</span>
+                </div>
 
-                <h3 className="mt-3 text-2xl font-bold leading-tight text-slate-900">
+                <Link href={`/blog/${article.slug}`} className="mt-4 block text-2xl font-semibold leading-tight text-slate-900 transition hover:text-blue-600">
                   {article.title}
-                </h3>
+                </Link>
 
-                <p className="mt-4 line-clamp-4 text-slate-600">
+                <p className="mt-4 text-sm leading-7 text-slate-600 line-clamp-4">
                   {article.excerpt}
                 </p>
 
-                <Link
-                  href={`/blog/${article.slug}`}
-                  className="mt-6 inline-flex items-center gap-2 font-medium text-blue-600"
-                >
-                  Read the article
+                <div className="mt-6 flex items-center justify-between gap-4">
+                  <p className="text-sm text-slate-500">{article.author}</p>
 
-                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                </Link>
+                  <Link
+                    href={`/blog/${article.slug}`}
+                    className="inline-flex items-center gap-2 text-sm font-medium text-blue-600"
+                  >
+                    Read article
+                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </Link>
+                </div>
               </div>
             </article>
           ))}
