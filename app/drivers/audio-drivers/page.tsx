@@ -89,6 +89,19 @@ export default function Page() {
         },
     ]
 
+
+   const soundProblemsData = {
+  heading: 'Common Sound Problems',
+
+  description1:
+    'No sound at all, sound from the wrong device, crackling during calls, or a microphone nobody can hear — almost all of these trace back to the driver or to which device is selected as the default.',
+
+  description2:
+    'Reinstalling the audio driver from your laptop or motherboard maker, then confirming the right playback and recording devices are set as default, clears up the great majority of everyday audio issues.',
+
+  image: '/network-fix.svg',
+  imageAlt: 'Audio driver troubleshooting illustration',
+}
     const audioRepairNote =
         "If anything here feels out of your depth, that's a normal feeling. A local technician can run this exact routine in minutes, and nothing on this page requires special tools."
     return (
@@ -102,7 +115,9 @@ export default function Page() {
                 topics={topics}
             />
 
-            <DriverFeatureShowcase />
+            
+
+            <DriverFeatureShowcase {...soundProblemsData} />
 
             <DriverRepairSteps
                 title="Fix it in five careful steps"

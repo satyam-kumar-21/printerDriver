@@ -6,6 +6,7 @@ import WantUs from '@/app/components/home/WantUs'
 import DriverFAQ from '@/app/components/drivers/DriverFAQ'
 import DeviceCodeTable from '@/app/components/drivers/DeviceCodeTable'
 import DriverRepairSteps from '@/app/components/drivers/DriverRepairSteps'
+import DriverFeatureShowcase from '@/app/components/drivers/DriverFeatureShowcase'
 
 export default function Page() {
   const features = [
@@ -91,6 +92,20 @@ export default function Page() {
     },
   ]
 
+
+  const troubleshootingFiveStepsData = {
+  heading: 'A Reliable Way to Troubleshoot Driver Issues',
+
+  description1:
+    'Most driver and hardware issues follow a predictable pattern, where the real cause is usually something simple like a loose connection, incorrect driver, or leftover configuration from a previous installation.',
+
+  description2:
+    'Start with basic checks like restarting and reconnecting the device, confirm the exact hardware in system tools, download the correct driver before removing anything, perform a clean reinstall, and finally test across different apps and scenarios to ensure everything is working correctly.',
+
+  image: '/network-fix.svg',
+  imageAlt: 'Troubleshooting steps illustration',
+}
+
   const troubleshootingRepairNote =
     "Most driver problems are solved by careful identification and a clean reinstall. If the issue remains after these steps, the hardware itself, a damaged operating-system component, or application-specific settings may be the real cause. Nothing here requires specialist tools, and a technician can usually complete this routine in a few minutes."
   return (
@@ -105,6 +120,8 @@ export default function Page() {
         features={features}
         topics={topics}
       />
+
+        <DriverFeatureShowcase {...troubleshootingFiveStepsData} />
 
       <DriverRepairSteps
         title="Fix it in five careful steps"

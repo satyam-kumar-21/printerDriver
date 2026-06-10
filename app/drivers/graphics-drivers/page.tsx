@@ -6,6 +6,7 @@ import WantUs from '@/app/components/home/WantUs'
 import DriverFAQ from '@/app/components/drivers/DriverFAQ'
 import DeviceCodeTable from '@/app/components/drivers/DeviceCodeTable'
 import DriverRepairSteps from '@/app/components/drivers/DriverRepairSteps'
+import DriverFeatureShowcase from '@/app/components/drivers/DriverFeatureShowcase'
 
 export default function Page() {
   const features = [
@@ -77,6 +78,19 @@ export default function Page() {
     },
   ]
 
+  const displayFrustrationsData = {
+  heading: 'Common Display Frustrations',
+
+  description1:
+    "Flickering, a screen that goes black after waking, stutter in games, or a resolution that won't stick — these are the classic graphics-driver complaints, and they're usually among the most fixable.",
+
+  description2:
+    "A clean reinstall of the latest driver from your graphics card maker resolves the large majority of these issues, because it removes leftovers from previous versions that can quietly conflict. For laptops, your computer maker's site is often the better source, since their build is tuned for your exact panel and power settings.",
+
+  image: '/network-fix.svg',
+  imageAlt: 'Display driver troubleshooting illustration',
+}
+
   const graphicsRepairNote =
     "If anything here feels out of your depth, that's a normal feeling. A local technician can run this exact routine in minutes, and nothing on this page requires special tools."
   return (
@@ -92,6 +106,7 @@ export default function Page() {
         topics={topics}
       />
 
+        <DriverFeatureShowcase {...displayFrustrationsData} />
 
       <DriverRepairSteps
         title="Fix it in five careful steps"

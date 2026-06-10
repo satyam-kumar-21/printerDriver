@@ -3,7 +3,9 @@ import KnowledgeHero from '../components/knowledge/KnowledgeHero'
 import Step01 from '../components/knowledge/Step01'
 import Step02 from '../components/knowledge/Step02'
 import QuickHelp from '../components/knowledge/QuickHelp'
-import WhatWeCover from '../components/home/WhatWeCover'
+import QuickNote from '../components/knowledge/QuickNote'
+import WantUs from '../components/home/WantUs'
+import KnowledgeFAQ from '../components/knowledge/KnowledgeFAQ'
 
 function page() {
   return (
@@ -12,7 +14,12 @@ function page() {
       <Step01 />
       <Step02 />
       <QuickHelp />
-      {/* <WhatWeCover /> */}
+
+      <QuickNote />
+
+      <KnowledgeFAQ />
+
+      <WantUs />
     </>
   )
 }

@@ -6,6 +6,7 @@ import WantUs from '@/app/components/home/WantUs'
 import DriverFAQ from '@/app/components/drivers/DriverFAQ'
 import DeviceCodeTable from '@/app/components/drivers/DeviceCodeTable'
 import DriverRepairSteps from '@/app/components/drivers/DriverRepairSteps'
+import DriverFeatureShowcase from '@/app/components/drivers/DriverFeatureShowcase'
 
 export default function Page() {
     const features = [
@@ -28,6 +29,18 @@ export default function Page() {
 
     const topics = ["Queue Stuck", "Printer Offline", "Gibberish Output", "Installation Issues"]
 
+
+    const printerOfflineShowcaseData = {
+  heading: 'Why Printers Go “Offline” (and Other Classics)',
+  description1:
+    'A printer that shows “offline” while sitting right there, a queue that won’t move, pages of gibberish symbols, or blank sheets — these are the printing classics, and nearly all of them live in software, not in the machine.',
+
+  description2:
+    '“Offline” simply means the computer can’t reach the printer at that moment — a Wi-Fi hiccup, a sleeping device, or a stuck job blocking the queue. Gibberish output usually means the job was rendered with the wrong driver, often a near-match model. The reliable fix is to clear the queue, then reinstall the full driver package for your exact model from the manufacturer’s support page.',
+
+  image: '/network-fix.svg',
+  imageAlt: 'Printer offline troubleshooting illustration',
+}
     const printerFaqs = [
         {
             question: "My printer shows 'offline' but it's switched on. What now?",
@@ -91,11 +104,13 @@ export default function Page() {
                 topics={topics}
             />
 
-<DriverRepairSteps
-  title="Fix it in five careful steps"
-  steps={printerRepairSteps}
-  note={printerRepairNote}
-/>
+           <DriverFeatureShowcase {...printerOfflineShowcaseData} />
+
+            <DriverRepairSteps
+                title="Fix it in five careful steps"
+                steps={printerRepairSteps}
+                note={printerRepairNote}
+            />
 
             <DeviceCodeTable />
             <DriverFAQ

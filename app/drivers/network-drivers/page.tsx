@@ -76,6 +76,19 @@ export default function Page() {
     },
   ]
 
+  const connectivityFrustrationsData = {
+  heading: 'Common Connectivity Frustrations',
+
+  description1:
+    'Wi-Fi that drops every few minutes, slow speeds compared to other devices on the same network, or a connection that refuses to come back after sleep — these are the most common driver-related complaints, and among the most easily fixed.',
+
+  description2:
+    "A fresh driver, paired with a power-management setting that stops the OS from aggressively powering down the network chip, solves most of them. For laptops, your manufacturer's site is almost always the right source, since they tune it for your specific Wi-Fi module.",
+
+  image: '/network-fix.svg',
+  imageAlt: 'Network connectivity troubleshooting illustration',
+}
+
   const networkRepairNote =
     "If anything here feels out of your depth, that's a normal feeling. A local technician can run this exact routine in minutes, and nothing on this page requires special tools."
   return (
@@ -91,7 +104,7 @@ export default function Page() {
         topics={topics}
       />
 
-      <DriverFeatureShowcase image="/network-fix.svg"/>
+      <DriverFeatureShowcase {...connectivityFrustrationsData} />
 
       <DriverRepairSteps
         title="Fix it in five careful steps"

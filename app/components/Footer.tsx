@@ -66,24 +66,33 @@ export default function Footer() {
           {/* Driver Categories */}
           <div>
             <h3 className="mb-3 sm:mb-5 text-xs font-semibold uppercase tracking-wider text-slate-900">
-              Driver Guides
+              Driver Overviews
             </h3>
 
             <div className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-slate-600">
-              <Link href="#" className="block hover:text-slate-900 transition">
+              <Link href="/drivers" className="block hover:text-slate-900 transition">
+                All Device Drivers
+              </Link>
+              <Link href="/drivers/printer-drivers" className="block hover:text-slate-900 transition">
                 Printer Drivers
               </Link>
-              <Link href="#" className="block hover:text-slate-900 transition">
+              <Link href="/drivers/scanner-drivers" className="block hover:text-slate-900 transition">
                 Scanner Drivers
               </Link>
-              <Link href="#" className="block hover:text-slate-900 transition">
+              <Link href="/drivers/graphics-drivers" className="block hover:text-slate-900 transition">
                 Graphics Drivers
               </Link>
-              <Link href="#" className="block hover:text-slate-900 transition">
+              <Link href="/drivers/audio-drivers" className="block hover:text-slate-900 transition">
                 Audio Drivers
               </Link>
-              <Link href="#" className="block hover:text-slate-900 transition">
-                Network Drivers
+              <Link href="/drivers/network-drivers" className="block hover:text-slate-900 transition">
+                Wi-Fi & Network
+              </Link>
+              <Link href="/drivers/bluetooth-drivers" className="block hover:text-slate-900 transition">
+                Bluetooth Drivers
+              </Link>
+              <Link href="/drivers/usb-drivers" className="block hover:text-slate-900 transition">
+                USB Drivers
               </Link>
             </div>
           </div>
@@ -106,6 +115,12 @@ export default function Footer() {
               </Link>
               <Link href="/cookie-policy" className="block hover:text-slate-900 transition">
                 Cookie Policy
+              </Link>
+              <Link href="/advertising-disclosure" className="block hover:text-slate-900 transition">
+                Advertising Disclosure
+              </Link>
+              <Link href="/accessibility" className="block hover:text-slate-900 transition">
+                Accessibility
               </Link>
             </div>
           </div>
@@ -164,6 +179,8 @@ export default function Footer() {
             <Link href="/terms-of-use" className="hover:text-slate-900 transition">Terms</Link>
             <Link href="/disclaimer" className="hover:text-slate-900 transition">Disclaimer</Link>
             <Link href="/cookie-policy" className="hover:text-slate-900 transition">Cookies</Link>
+            <Link href="/advertising-disclosure" className="hover:text-slate-900 transition">Advertising Disclosure</Link>
+            <Link href="/accessibility" className="hover:text-slate-900 transition">Accessibility</Link>
             <Link href="/sitemap" className="hover:text-slate-900 transition">Sitemap</Link>
           </div>
         </div>

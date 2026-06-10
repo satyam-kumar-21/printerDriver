@@ -6,6 +6,7 @@ import WantUs from '@/app/components/home/WantUs'
 import DriverFAQ from '@/app/components/drivers/DriverFAQ'
 import DeviceCodeTable from '@/app/components/drivers/DeviceCodeTable'
 import DriverRepairSteps from '@/app/components/drivers/DriverRepairSteps'
+import DriverFeatureShowcase from '@/app/components/drivers/DriverFeatureShowcase'
 
 export default function Page() {
   const features = [
@@ -76,6 +77,20 @@ export default function Page() {
     },
   ]
 
+
+  const usbDeviceIssuesData = {
+  heading: "When a Device Isn't Recognised",
+
+  description1:
+    "An unknown-device error, a drive that mounts then vanishes, or a port that charges but won't transfer data — these point to the USB stack rather than the gadget itself.",
+
+  description2:
+    "Trying another port, reseating the cable, and reinstalling the device-specific driver from its maker clears up most cases. A surprising number are simply a tired cable or a port stuck in a low-power state after sleep.",
+
+  image: '/network-fix.svg',
+  imageAlt: 'USB device troubleshooting illustration',
+}
+
   const usbRepairNote =
     "If anything here feels out of your depth, that's a normal feeling. A local technician can run this exact routine in minutes, and nothing on this page requires special tools."
 
@@ -91,6 +106,8 @@ export default function Page() {
         features={features}
         topics={topics}
       />
+
+        <DriverFeatureShowcase {...usbDeviceIssuesData} />
 
       <DriverRepairSteps
         title="Fix it in five careful steps"

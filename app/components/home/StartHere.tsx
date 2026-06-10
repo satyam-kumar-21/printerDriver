@@ -66,7 +66,7 @@ export default function StartHere() {
               key={item.label}
               className="group rounded-xl sm:rounded-2xl lg:rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 lg:p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200"
             >
-              <h3 className="bg-linear-to-r from-white to-slate-300 bg-clip-text text-2xl sm:text-3xl lg:text-4xl font-bold text-transparent">
+              <h3 className="bg-linear-to-r text-blue-600 bg-clip-text text-2xl sm:text-3xl lg:text-4xl font-bold ">
                 {item.value}
               </h3>
 

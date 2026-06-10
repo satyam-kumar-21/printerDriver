@@ -6,6 +6,7 @@ import WantUs from '@/app/components/home/WantUs'
 import DriverFAQ from '@/app/components/drivers/DriverFAQ'
 import DeviceCodeTable from '@/app/components/drivers/DeviceCodeTable'
 import DriverRepairSteps from '@/app/components/drivers/DriverRepairSteps'
+import DriverFeatureShowcase from '@/app/components/drivers/DriverFeatureShowcase'
 
 export default function Page() {
   const features = [
@@ -76,6 +77,18 @@ export default function Page() {
     },
   ]
 
+  const bluetoothPairingProblemsData = {
+  heading: 'Pairing Problems and Vanishing Devices',
+
+  description1:
+    "A device that refuses to pair, headphones that connect but play no sound, or a mouse that dies every time the laptop sleeps — Bluetooth's classics are consistent, and so are the fixes.",
+
+  description2:
+    "Stale pairing records cause most refusals: removing the device from the list and pairing fresh clears them. Audio-but-silent is usually a default-output selection, not the radio. The post-sleep vanishing act is typically caused by power management putting the radio into a sleep state it doesn't recover from — adjusting that setting plus installing the latest driver from your laptop maker usually fixes it.",
+
+  image: '/network-fix.svg',
+  imageAlt: 'Bluetooth connectivity troubleshooting illustration',
+}
   const bluetoothRepairNote =
     "If anything here feels out of your depth, that's a normal feeling. A local technician can run this exact routine in minutes, and nothing on this page requires special tools."
   return (
@@ -90,6 +103,8 @@ export default function Page() {
         features={features}
         topics={topics}
       />
+
+      <DriverFeatureShowcase {...bluetoothPairingProblemsData} />
 
       <DriverRepairSteps
         title="Fix it in five careful steps"

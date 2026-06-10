@@ -6,6 +6,7 @@ import WantUs from '@/app/components/home/WantUs'
 import DriverFAQ from '@/app/components/drivers/DriverFAQ'
 import DeviceCodeTable from '@/app/components/drivers/DeviceCodeTable'
 import DriverRepairSteps from '@/app/components/drivers/DriverRepairSteps'
+import DriverFeatureShowcase from '@/app/components/drivers/DriverFeatureShowcase'
 
 export default function Page() {
   const features = [
@@ -76,6 +77,20 @@ export default function Page() {
     },
   ]
 
+
+  const printerScannerIssueData = {
+  heading: "When the Printer Works but the Scanner Doesn't",
+
+  description1:
+    "It's the classic multifunction complaint: printing is flawless, yet every scanning app insists no scanner exists. Nine times out of ten, the machine was set up with a basic or print-only driver, and the scanning half of the software simply was never installed.",
+
+  description2:
+    "The second classic is network scanning: printing travels one way, but scans travel back from the device to your computer — and a firewall can silently block that return path. Installing the maker’s full package and allowing its scan utility through the firewall resolves the overwhelming majority of cases.",
+
+  image: '/network-fix.svg',
+  imageAlt: 'Printer scanning troubleshooting illustration',
+}
+
   const scannerRepairNote =
     "If anything here feels out of your depth, that's perfectly normal. A local technician can usually perform this entire routine in minutes, and nothing on this page requires specialist tools."
   return (
@@ -90,6 +105,8 @@ export default function Page() {
         features={features}
         topics={topics}
       />
+
+      <DriverFeatureShowcase {...printerScannerIssueData} />
 
       <DriverRepairSteps
         title="Fix it in five careful steps"
