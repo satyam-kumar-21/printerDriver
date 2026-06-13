@@ -61,7 +61,7 @@ export default function DriverDetailHero({ title, breadcrumbs = [], intro, image
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid items-center gap-10 md:grid-cols-[1.2fr_0.8fr]">
           <div>
             <div className="mb-6 flex items-center gap-2 text-sm text-slate-500">
               <Link href="/" className="hover:text-blue-600">

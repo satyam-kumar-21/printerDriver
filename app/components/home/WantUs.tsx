@@ -11,11 +11,11 @@ export default function WantUs() {
       </div>
 
       <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6">
-        <div className="rounded-2xl sm:rounded-3xl lg:rounded-4xl border border-slate-200 bg-white p-6 sm:p-8 lg:p-10 shadow-xl shadow-slate-200/40">
+        <div className="rounded-2xl sm:rounded-3xl lg:rounded-4xl border border-slate-200 bg-white p-6 sm:p-8 lg:p-10">
           
           {/* Badge */}
           <div className="mb-4 sm:mb-5 flex justify-center">
-            <span className="inline-flex rounded-full border border-sky-200 bg-white px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 shadow-sm shadow-slate-200/50">
+            <span className="inline-flex rounded-full border border-sky-200 bg-white px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-semibold uppercase tracking-[0.25em] text-blue-600">
               Community Driven
             </span>
           </div>

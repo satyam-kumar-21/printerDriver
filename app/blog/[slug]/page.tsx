@@ -227,12 +227,12 @@ export default async function ArticlePage({ params }: Props) {
                     Explore more practical guides and explanations from DriverWise.
                   </p>
 
-                  <div className="grid gap-6 sm:grid-cols-2">
-                    {related.slice(0, 2).map((item) => (
+                  <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    {related.slice(0, 6).map((item) => (
                       <Link
                         key={item.slug}
                         href={`/blog/${item.slug}`}
-                        className="group overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-blue-100/40"
+                        className="group overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-200"
                       >
                         <div className="flex items-center justify-between">
                           <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-700">

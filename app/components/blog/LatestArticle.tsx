@@ -42,11 +42,11 @@ export default function LatestArticle() {
         </div>
 
         {/* Articles Grid */}
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {blogArticles.map((article) => (
             <article
               key={article.slug}
-              className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
+              className="group overflow-hidden rounded-3xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-2 hover:border-blue-200"
             >
               <Link href={`/blog/${article.slug}`} className="block">
                 <div className="relative h-64 overflow-hidden bg-slate-100">

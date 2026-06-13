@@ -39,7 +39,7 @@ function ScrollSectionHome() {
           return (
             <div
               key={index}
-              className="group flex items-center gap-2 rounded-full border border-blue-100 bg-white px-6 py-3 shadow-sm transition-all duration-300 hover:border-blue-500 hover:bg-blue-600 hover:text-white hover:shadow-lg"
+              className="group flex items-center gap-2 rounded-full border border-blue-100 bg-white px-6 py-3 transition-all duration-300 hover:border-blue-500 hover:bg-blue-600 hover:text-white"
             >
               <Icon className="h-4 w-4 text-blue-600 transition-colors group-hover:text-white" />
               <span className="whitespace-nowrap text-sm font-semibold text-slate-700 transition-colors group-hover:text-white">

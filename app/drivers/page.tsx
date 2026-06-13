@@ -10,6 +10,8 @@ import DriversHero from '../components/drivers/DriversHero'
 import DriversWhatWeCover from '../components/drivers/DriversWhatWeCover'
 import WantUs from '../components/home/WantUs'
 import JsonLd from '../components/seo/JsonLd'
+import WhereDriversLive from '../components/home/WhereDriversLive';
+import AboutDriverWiseHome from '../components/home/AboutDriverWiseHome';
 
 function page() {
   const jsonLd = {
@@ -25,6 +27,8 @@ function page() {
     <JsonLd data={jsonLd} />
     <DriversHero />
     <DriversWhatWeCover />
+     <WhereDriversLive />
+     <AboutDriverWiseHome />
     <WantUs />
     </>
   )

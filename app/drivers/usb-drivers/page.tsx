@@ -14,6 +14,7 @@ import DriverFAQ from '@/app/components/drivers/DriverFAQ'
 import DeviceCodeTable from '@/app/components/drivers/DeviceCodeTable'
 import DriverRepairSteps from '@/app/components/drivers/DriverRepairSteps'
 import DriverFeatureShowcase from '@/app/components/drivers/DriverFeatureShowcase'
+import DriverExplanation from '../../components/drivers/DriverExplanation'
 
 export default function Page() {
   const features = [
@@ -101,6 +102,20 @@ export default function Page() {
   const usbRepairNote =
     "If anything here feels out of your depth, that's a normal feeling. A local technician can run this exact routine in minutes, and nothing on this page requires special tools."
 
+  const usbExplanation = {
+    title: "What the USB Stack Does",
+    paragraphs: [
+        "When you connect a device, a chain of drivers springs into action: a host-controller driver manages the physical port, a hub driver tracks what's attached, and a class or device driver knows how to speak to that specific kind of hardware — a keyboard, a drive, a camera.",
+        "Together they enumerate the device, assign it resources, and load the right software so it simply works, often with no action from you at all."
+    ],
+    points: [
+        { text: "Detects and enumerates newly connected devices" },
+        { text: "Loads the correct class or device-specific driver" },
+        { text: "Manages power delivery and port resources" },
+        { text: "Supports hubs, daisy-chaining, and hot-plugging" }
+    ]
+  }
+  
   return (
     <main>
       <DriverDetailHero
@@ -113,8 +128,8 @@ export default function Page() {
         features={features}
         topics={topics}
       />
-
-        <DriverFeatureShowcase {...usbDeviceIssuesData} />
+      <DriverExplanation {...usbExplanation} />
+      <DriverFeatureShowcase {...usbDeviceIssuesData} />
 
       <DriverRepairSteps
         title="Fix it in five careful steps"

@@ -23,7 +23,7 @@ function ContactHero() {
       </div>
 
       <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6">
-        <div className="grid gap-10 lg:grid-cols-2 items-center">
+        <div className="grid gap-10 md:grid-cols-2 items-center">
           
           {/* Left Content */}
           <div>

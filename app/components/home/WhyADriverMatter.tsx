@@ -20,7 +20,7 @@ export default function WhyADriverMatter() {
 
           {/* Left Content */}
           <div>
-            <span className="inline-flex rounded-full border border-sky-200 bg-white px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 shadow-sm shadow-slate-200/50">
+            <span className="inline-flex rounded-full border border-sky-200 bg-white px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-semibold uppercase tracking-[0.25em] text-blue-600">
               Why Drivers Matter
             </span>
 
@@ -52,7 +52,7 @@ export default function WhyADriverMatter() {
 
           {/* Right Visual */}
           <div className="relative hidden lg:block">
-            <div className="rounded-2xl sm:rounded-3xl lg:rounded-4xl border border-slate-200 bg-white p-5 sm:p-6 lg:p-8 shadow-xl shadow-slate-200/40">
+            <div className="rounded-2xl sm:rounded-3xl lg:rounded-4xl border border-slate-200 bg-white p-5 sm:p-6 lg:p-8">
 
               <div className="grid grid-cols-3 items-center gap-3 sm:gap-4">
 
@@ -69,7 +69,7 @@ export default function WhyADriverMatter() {
 
                 {/* Driver */}
                 <div className="flex flex-col items-center">
-                  <div className="mb-3 sm:mb-4 flex h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16 items-center justify-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-linear-to-br from-blue-600 to-sky-500 shadow-lg shadow-blue-200/40 shrink-0">
+                  <div className="mb-3 sm:mb-4 flex h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16 items-center justify-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-linear-to-br from-blue-600 to-sky-500 shrink-0">
                     <ArrowRightLeft className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 text-white" />
                   </div>
 

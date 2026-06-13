@@ -25,7 +25,7 @@ export default function EditorsPick() {
                 </div>
 
                 {/* Featured Card */}
-                <div className="overflow-hidden rounded-[32px] border border-slate-200 bg-white shadow-xl shadow-slate-200/40">
+                <div className="overflow-hidden rounded-[32px] border border-slate-200 bg-white">
                     <div className="grid lg:grid-cols-2">
                         {/* Left Side */}
                         <div className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-sky-500 to-cyan-500 p-8 lg:p-12">
@@ -62,7 +62,7 @@ export default function EditorsPick() {
 
                                         <div className="h-[2px] flex-1 bg-white/30" />
 
-                                        <div className="rounded-2xl bg-white px-5 py-4 shadow-lg">
+                                        <div className="rounded-2xl bg-white px-5 py-4">
                                             <p className="font-bold text-blue-600">
                                                 Driver
                                             </p>
@@ -118,7 +118,7 @@ export default function EditorsPick() {
 
                                 <Link
                                     href="/blog/what-is-a-driver-really"
-                                    className="group mt-8 inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-blue-600 to-sky-500 px-7 py-4 font-semibold text-white shadow-lg shadow-blue-200/50 transition-all duration-300 hover:-translate-y-1"
+                                    className="group mt-8 inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-blue-600 to-sky-500 px-7 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1"
                                 >
                                     Read the Full Article
 

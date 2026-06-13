@@ -43,7 +43,7 @@ export default function ArticleHero({
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6">
-        <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid items-center gap-10 md:grid-cols-[1.2fr_0.8fr]">
           {/* Left */}
           <div>
             {/* Breadcrumb */}
@@ -66,7 +66,7 @@ export default function ArticleHero({
             </div>
 
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-4 py-2 shadow-sm">
+            <div className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-4 py-2">
               <span className="h-2 w-2 rounded-full bg-blue-500" />
 
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">
@@ -86,7 +86,7 @@ export default function ArticleHero({
 
             {/* Meta */}
             <div className="mt-10 flex flex-wrap gap-4">
-              <div className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-5 py-3 shadow-sm">
+              <div className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-5 py-3">
                 <Calendar className="h-4 w-4 text-blue-600" />
 
                 <span className="text-sm font-medium text-slate-700">
@@ -94,7 +94,7 @@ export default function ArticleHero({
                 </span>
               </div>
 
-              <div className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-5 py-3 shadow-sm">
+              <div className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-5 py-3">
                 <Clock className="h-4 w-4 text-blue-600" />
 
                 <span className="text-sm font-medium text-slate-700">
@@ -102,7 +102,7 @@ export default function ArticleHero({
                 </span>
               </div>
 
-              <div className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-5 py-3 shadow-sm">
+              <div className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-5 py-3">
                 <FileText className="h-4 w-4 text-blue-600" />
 
                 <span className="text-sm font-medium text-slate-700">
@@ -114,7 +114,7 @@ export default function ArticleHero({
 
           {/* Right Card */}
           <div>
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/40">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="space-y-4">
                 <div className="flex items-start gap-4 rounded-2xl bg-slate-50 p-4">
                   <BookOpen className="mt-0.5 h-5 w-5 text-blue-600" />

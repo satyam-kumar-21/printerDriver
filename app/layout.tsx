@@ -19,7 +19,7 @@ function layout({ children }: { children: React.ReactNode }) {
         <ScrollToTop />
         <Header />
         
-        <main className="w-full">
+        <main className="w-full pt-20">
           {children}
         </main>
         <Footer />

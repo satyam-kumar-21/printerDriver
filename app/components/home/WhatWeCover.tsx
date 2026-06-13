@@ -11,6 +11,9 @@ import {
   Bluetooth,
   Usb,
   Wrench,
+  Cpu,
+  HardDrive,
+  Keyboard,
 } from "lucide-react";
 
 const categories = [
@@ -57,6 +60,24 @@ const categories = [
     description: "Device recognition, installation and USB troubleshooting."
   },
   {
+    title: "Chipset Drivers",
+    slug: "chipset-drivers",
+    icon: Cpu,
+    description: "The foundation that connects all your hardware together."
+  },
+  {
+    title: "Storage Drivers",
+    slug: "storage-drivers",
+    icon: HardDrive,
+    description: "SSD, HDD, and external storage performance and reliability."
+  },
+  {
+    title: "Input Devices",
+    slug: "input-devices",
+    icon: Keyboard,
+    description: "Keyboards, mice, touchpads, and game controller support."
+  },
+  {
     title: "Troubleshooting Hub",
     slug: "troubleshooting",
     icon: Wrench,
@@ -66,7 +87,7 @@ const categories = [
 
 export default function WhatWeCover() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-12 sm:py-16 lg:py-24">
+    <section className="relative overflow-hidden bg-white py-12 sm:py-16 lg:py-24">
       {/* Background Glow */}
       <div className="absolute inset-0">
         <div className="absolute left-0 top-0 h-125 w-125 rounded-full bg-blue-200/40 blur-[140px]" />
@@ -76,7 +97,7 @@ export default function WhatWeCover() {
       <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6">
         {/* Heading */}
         <div className="mx-auto mb-8 sm:mb-12 lg:mb-16 max-w-3xl text-center">
-          <span className="inline-flex rounded-full border border-sky-200 bg-white px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-semibold uppercase tracking-[0.25em] text-blue-600 shadow-sm shadow-slate-200/50">
+          <span className="inline-flex rounded-full border border-sky-200 bg-white px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-semibold uppercase tracking-[0.25em] text-blue-600">
             What We Cover
           </span>
 
@@ -91,7 +112,7 @@ export default function WhatWeCover() {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-4 sm:gap-5 lg:gap-6 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
           {categories.map((item) => {
             const Icon = item.icon;
 
@@ -99,30 +120,34 @@ export default function WhatWeCover() {
               <Link
                 key={item.slug}
                 href={`/drivers/${item.slug}`}
-                className="group relative overflow-hidden rounded-xl sm:rounded-2xl lg:rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-200"
+                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:-translate-y-3 hover:border-blue-200"
               >
                 {/* Hover Glow */}
                 <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-cyan-500/10 blur-3xl" />
+                  <div className="absolute -right-12 -top-12 h-48 w-48 rounded-full bg-blue-400/10 blur-3xl" />
                 </div>
 
                 <div className="relative">
-                  <div className="mb-4 sm:mb-6 flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-xl sm:rounded-2xl bg-linear-to-br from-blue-600 to-sky-500 shadow-lg shadow-blue-200/40 shrink-0">
-                    <Icon className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                  <div className="mb-4 flex items-center justify-between">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-sky-500">
+                      <Icon className="h-6 w-6 text-white" />
+                    </div>
+                    <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
+                      Guide
+                    </span>
                   </div>
 
-                  <h3 className="mb-2 sm:mb-3 text-base sm:text-lg lg:text-xl font-semibold text-slate-900">
+                  <h3 className="mb-3 text-xl font-bold text-slate-900">
                     {item.title}
                   </h3>
 
-                  <p className="mb-4 sm:mb-6 text-xs sm:text-sm leading-6 sm:leading-7 text-slate-600">
+                  <p className="mb-6 text-sm leading-7 text-slate-600">
                     {item.description}
                   </p>
 
-                  <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-blue-600">
-                    Explore Guide
-
-                    <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  <div className="flex items-center gap-2 text-sm font-semibold text-blue-600">
+                    Read more
+                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </div>
                 </div>
               </Link>

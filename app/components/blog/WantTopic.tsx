@@ -24,11 +24,11 @@ export default function WantTopic() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="overflow-hidden rounded-[32px] border border-slate-200 bg-white shadow-xl shadow-slate-200/40">
+        <div className="overflow-hidden rounded-[32px] border border-slate-200 bg-white">
           <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
             {/* Left Content */}
             <div className="p-8 sm:p-10 lg:p-12">
-              <div className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-4 py-2 shadow-sm">
+              <div className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-4 py-2">
                 <span className="h-2 w-2 rounded-full bg-blue-500" />
 
                 <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">
@@ -52,7 +52,7 @@ export default function WantTopic() {
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <Link
                   href="/contact"
-                  className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-blue-600 to-sky-500 px-6 py-4 font-semibold text-white shadow-lg shadow-blue-200/50 transition-all duration-300 hover:-translate-y-1"
+                  className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-blue-600 to-sky-500 px-6 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1"
                 >
                   Suggest a Topic
 
@@ -72,7 +72,7 @@ export default function WantTopic() {
             <div className="p-8 sm:p-10 lg:p-12">
               <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
                 <div className="space-y-4">
-                  <div className="flex gap-4 rounded-2xl bg-white p-4 shadow-sm">
+                  <div className="flex gap-4 rounded-2xl bg-white p-4">
                     <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-sky-500">
                       <MessageSquareText className="h-5 w-5 text-white" />
                     </div>
@@ -89,7 +89,7 @@ export default function WantTopic() {
                     </div>
                   </div>
 
-                  <div className="flex gap-4 rounded-2xl bg-white p-4 shadow-sm">
+                  <div className="flex gap-4 rounded-2xl bg-white p-4">
                     <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-sky-500">
                       <HelpCircle className="h-5 w-5 text-white" />
                     </div>

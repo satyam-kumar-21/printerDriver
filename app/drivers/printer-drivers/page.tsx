@@ -14,6 +14,7 @@ import DriverFAQ from '@/app/components/drivers/DriverFAQ'
 import DeviceCodeTable from '@/app/components/drivers/DeviceCodeTable'
 import DriverRepairSteps from '@/app/components/drivers/DriverRepairSteps'
 import DriverFeatureShowcase from '@/app/components/drivers/DriverFeatureShowcase'
+import DriverExplanation from '../../components/drivers/DriverExplanation'
 
 export default function Page() {
     const features = [
@@ -98,6 +99,20 @@ export default function Page() {
 
     const printerRepairNote =
         "If anything here feels out of your depth, that's a normal feeling. A local technician can run this exact routine in minutes, and nothing on this page requires special tools."
+        
+    const printerExplanation = {
+        title: "What a Printer Driver Does",
+        paragraphs: [
+            "A printer driver takes the page your application has laid out and converts it into the page-description language your specific printer understands — where every line, image, and character should land on the paper. It also presents the printer's abilities to you: paper sizes, print quality, double-sided printing, colour or draft mode.",
+            "Between the click and the paper sits the print queue (the spooler), which the driver feeds. Jobs wait their turn there, your application gets to move on instantly, and status — ink levels, paper jams, that blinking light — flows back the other way so you know what's happening."
+        ],
+        points: [
+            { text: "Converts your document into the printer's page language" },
+            { text: "Exposes paper size, quality, and double-sided options" },
+            { text: "Queues jobs through the spooler so apps don't wait" },
+            { text: "Reports ink, paper, and error status back to you" }
+        ]
+    }
     return (
         <main>
             <DriverDetailHero
@@ -110,6 +125,8 @@ export default function Page() {
                 features={features}
                 topics={topics}
             />
+
+            <DriverExplanation {...printerExplanation} />
 
            <DriverFeatureShowcase {...printerOfflineShowcaseData} />
 

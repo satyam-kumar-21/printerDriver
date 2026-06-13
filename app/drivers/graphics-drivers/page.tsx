@@ -14,6 +14,7 @@ import DriverFAQ from '@/app/components/drivers/DriverFAQ'
 import DeviceCodeTable from '@/app/components/drivers/DeviceCodeTable'
 import DriverRepairSteps from '@/app/components/drivers/DriverRepairSteps'
 import DriverFeatureShowcase from '@/app/components/drivers/DriverFeatureShowcase'
+import DriverExplanation from '../../components/drivers/DriverExplanation'
 
 export default function Page() {
   const features = [
@@ -100,6 +101,20 @@ export default function Page() {
 
   const graphicsRepairNote =
     "If anything here feels out of your depth, that's a normal feeling. A local technician can run this exact routine in minutes, and nothing on this page requires special tools."
+    
+  const graphicsExplanation = {
+    title: "What a Graphics Driver Does",
+    paragraphs: [
+      "A graphics driver receives drawing instructions from the operating system and your applications, then translates them into the exact commands your specific GPU understands. It manages memory on the card, schedules rendering work, and pushes finished frames to the display at the right moment.",
+      "It also exposes advanced features — hardware video decoding, multiple-monitor layouts, and game-ready optimisations — that applications can ask for without knowing the details of your card."
+    ],
+    points: [
+      { text: "Translates rendering calls into GPU-specific commands" },
+      { text: "Manages video memory and the frame buffer" },
+      { text: "Handles multi-monitor layout, scaling, and refresh" },
+      { text: "Enables hardware video decode and acceleration" }
+    ]
+  }
   return (
     <main>
       <DriverDetailHero
@@ -113,7 +128,9 @@ export default function Page() {
         topics={topics}
       />
 
-        <DriverFeatureShowcase {...displayFrustrationsData} />
+      <DriverExplanation {...graphicsExplanation} />
+
+      <DriverFeatureShowcase {...displayFrustrationsData} />
 
       <DriverRepairSteps
         title="Fix it in five careful steps"

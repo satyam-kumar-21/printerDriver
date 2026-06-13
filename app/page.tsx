@@ -14,6 +14,12 @@ import WantUs from './components/home/WantUs'
 import JsonLd from './components/seo/JsonLd'
 import ScrollSectionHome from './components/home/ScrollSectionHome'
 import TheBasics from './components/home/TheBasics';
+import DriverOverviewSections from './components/home/DriverOverviewSections';
+import WhereDriversLive from './components/home/WhereDriversLive';
+import HowToKnowWhichDriver from './components/home/HowToKnowWhichDriver';
+import CommonDriverProblems from './components/home/CommonDriverProblems';
+import HardwareCategories from './components/home/HardwareCategories';
+import AboutDriverWiseHome from './components/home/AboutDriverWiseHome';
 
 function page() {
   const jsonLd = {
@@ -44,7 +50,14 @@ function page() {
      <TheBasics />
      <WhatWeCover />
      <WhyADriverMatter />
-     <StartHere />
+  
+     <WhereDriversLive />
+     <HowToKnowWhichDriver />
+     <CommonDriverProblems />
+     <HardwareCategories />
+     <AboutDriverWiseHome />
+     <DriverOverviewSections />
+        <StartHere />
      <WantUs />
     </>
   )

@@ -14,6 +14,7 @@ import DriverFAQ from '@/app/components/drivers/DriverFAQ'
 import DeviceCodeTable from '@/app/components/drivers/DeviceCodeTable'
 import DriverRepairSteps from '@/app/components/drivers/DriverRepairSteps'
 import DriverFeatureShowcase from '@/app/components/drivers/DriverFeatureShowcase'
+import DriverExplanation from '../../components/drivers/DriverExplanation'
 
 export default function Page() {
   const features = [
@@ -98,6 +99,21 @@ export default function Page() {
 
   const networkRepairNote =
     "If anything here feels out of your depth, that's a normal feeling. A local technician can run this exact routine in minutes, and nothing on this page requires special tools."
+    
+  const networkExplanation = {
+    title: "What a Network Driver Does",
+    paragraphs: [
+        "A network driver is the software layer that connects your operating system's networking stack to the physical Wi-Fi or Ethernet chip in your machine. It receives packets from the hardware, hands them up to the operating system, and sends outgoing data back down to be transmitted.",
+        "On the wireless side it also manages connecting to access points, handling encryption, and adjusting transmission rates as you move around — all without you noticing."
+    ],
+    points: [
+        { text: "Moves packets between the OS and the network chip" },
+        { text: "Handles wireless association, authentication, and roaming" },
+        { text: "Implements features like checksum offload and packet queuing" },
+        { text: "Reports link speed, signal strength, and connection health" }
+    ]
+  }
+  
   return (
     <main>
       <DriverDetailHero
@@ -110,7 +126,7 @@ export default function Page() {
         features={features}
         topics={topics}
       />
-
+      <DriverExplanation {...networkExplanation} />
       <DriverFeatureShowcase {...connectivityFrustrationsData} />
 
       <DriverRepairSteps

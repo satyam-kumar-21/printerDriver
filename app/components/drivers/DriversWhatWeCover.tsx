@@ -11,6 +11,10 @@ import {
   Bluetooth,
   Usb,
   Wrench,
+  Cpu,
+  HardDrive,
+  Keyboard,
+  Smartphone,
 } from "lucide-react";
 
 const categories = [
@@ -64,6 +68,27 @@ const categories = [
       "Device recognition, installation and USB troubleshooting.",
   },
   {
+    title: "Chipset Drivers",
+    slug: "chipset-drivers",
+    icon: Cpu,
+    description:
+      "The foundation that connects all your hardware together.",
+  },
+  {
+    title: "Storage Drivers",
+    slug: "storage-drivers",
+    icon: HardDrive,
+    description:
+      "SSD, HDD, and external storage performance and reliability.",
+  },
+  {
+    title: "Input Devices",
+    slug: "input-devices",
+    icon: Keyboard,
+    description:
+      "Keyboards, mice, touchpads, and game controller support.",
+  },
+  {
     title: "Troubleshooting Hub",
     slug: "troubleshooting",
     icon: Wrench,
@@ -74,7 +99,7 @@ const categories = [
 
 export default function DriversWhatWeCover() {
   return (
-    <section className="relative overflow-hidden bg-slate-50 py-8 sm:py-10 lg:py-12">
+    <section className="relative overflow-hidden bg-white py-12 sm:py-16 lg:py-20">
       {/* Background Glow */}
       <div className="absolute inset-0">
         <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-blue-200/30 blur-[140px]" />
@@ -82,7 +107,23 @@ export default function DriversWhatWeCover() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {/* Section Header */}
+        <div className="mb-10 text-center">
+          <span className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-500">
+            <span className="h-2 w-2 rounded-full bg-blue-500" />
+            Driver Categories
+          </span>
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+            Explore Every Driver Family
+          </h2>
+          <p className="mt-3 max-w-2xl mx-auto text-base leading-7 text-slate-600">
+            From printers to chipsets, every hardware category has a guide written in simple,
+            straightforward language.
+          </p>
+        </div>
+
+        {/* Cards Grid */}
+        <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
           {categories.map((item) => {
             const Icon = item.icon;
 
@@ -90,19 +131,24 @@ export default function DriversWhatWeCover() {
               <Link
                 key={item.slug}
                 href={`/drivers/${item.slug}`}
-                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-100/50"
+                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-3 hover:border-blue-200 hover:shadow-2xl hover:shadow-blue-100/60"
               >
                 {/* Hover Glow */}
                 <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-blue-500/10 blur-3xl" />
+                  <div className="absolute -right-12 -top-12 h-48 w-48 rounded-full bg-blue-400/10 blur-3xl" />
                 </div>
 
                 <div className="relative">
-                  <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-sky-500 shadow-lg shadow-blue-200/50">
-                    <Icon className="h-6 w-6 text-white" />
+                  <div className="mb-4 flex items-center justify-between">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-sky-500 shadow-lg shadow-blue-200/60">
+                      <Icon className="h-6 w-6 text-white" />
+                    </div>
+                    <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
+                      Guide
+                    </span>
                   </div>
 
-                  <h3 className="mb-3 text-lg font-semibold text-slate-900">
+                  <h3 className="mb-3 text-xl font-bold text-slate-900">
                     {item.title}
                   </h3>
 
@@ -110,9 +156,8 @@ export default function DriversWhatWeCover() {
                     {item.description}
                   </p>
 
-                  <div className="flex items-center gap-2 text-sm font-medium text-blue-600">
-                    Explore Guide
-
+                  <div className="flex items-center gap-2 text-sm font-semibold text-blue-600">
+                    Read more
                     <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </div>
                 </div>

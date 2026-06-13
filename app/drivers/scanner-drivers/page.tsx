@@ -14,6 +14,7 @@ import DriverFAQ from '@/app/components/drivers/DriverFAQ'
 import DeviceCodeTable from '@/app/components/drivers/DeviceCodeTable'
 import DriverRepairSteps from '@/app/components/drivers/DriverRepairSteps'
 import DriverFeatureShowcase from '@/app/components/drivers/DriverFeatureShowcase'
+import DriverExplanation from '../../components/drivers/DriverExplanation'
 
 export default function Page() {
   const features = [
@@ -100,6 +101,21 @@ export default function Page() {
 
   const scannerRepairNote =
     "If anything here feels out of your depth, that's perfectly normal. A local technician can usually perform this entire routine in minutes, and nothing on this page requires specialist tools."
+    
+  const scannerExplanation = {
+    title: "What a Scanner Driver Does",
+    paragraphs: [
+        "A scanner driver implements the standard scanning interfaces that imaging applications rely on. When any app asks for “a 300 dpi colour scan of this area”, the driver translates that request into hardware commands, runs the sensor across the page, and streams the image data back to whichever program asked.",
+        "On multifunction printer-scanner devices there's an important wrinkle: the scanning driver is a separate piece of software from the printing driver. They ship together in the maker's full package — but a print-only installation quietly leaves scanning out, which explains one of the most common support mysteries."
+    ],
+    points: [
+        { text: "Implements the standard interfaces scanning apps rely on" },
+        { text: "Carries resolution, colour, and area settings to the hardware" },
+        { text: "Streams the scanned image back to your software" },
+        { text: "Installs separately from printing on multifunction devices" }
+    ]
+  }
+  
   return (
     <main>
       <DriverDetailHero
@@ -112,7 +128,7 @@ export default function Page() {
         features={features}
         topics={topics}
       />
-
+      <DriverExplanation {...scannerExplanation} />
       <DriverFeatureShowcase {...printerScannerIssueData} />
 
       <DriverRepairSteps

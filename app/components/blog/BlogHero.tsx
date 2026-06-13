@@ -22,7 +22,7 @@ export default function BlogHero() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] items-center">
+        <div className="grid gap-10 md:grid-cols-[1.15fr_0.85fr] items-center">
           
           {/* Left Content */}
           <div>
@@ -43,7 +43,7 @@ export default function BlogHero() {
             </div>
 
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-4 py-2 shadow-sm shadow-slate-200/50">
+            <div className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-4 py-2">
               <span className="h-2 w-2 rounded-full bg-blue-500" />
 
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">
@@ -92,7 +92,7 @@ export default function BlogHero() {
 
           {/* Right Card */}
           <div>
-            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/40">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6">
               <div className="mb-6 flex items-center gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-sky-500">
                   <BookOpen className="h-5 w-5 text-white" />

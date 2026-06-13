@@ -79,7 +79,7 @@ export default function TheBasics() {
   return (
     <section className="relative overflow-hidden py-24">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-50/60 via-white to-white" />
+      <div className="absolute inset-0 bg-white" />
 
       <div className="relative mx-auto max-w-7xl px-6">
         {/* Badge */}
@@ -103,7 +103,7 @@ export default function TheBasics() {
         </div>
 
         {/* Tabs */}
-        <div className="mx-auto mt-14 max-w-5xl rounded-3xl border border-blue-100 bg-white p-2 shadow-lg shadow-blue-100/40">
+        <div className="mx-auto mt-14 max-w-5xl rounded-3xl border border-blue-100 bg-white p-2">
           <div className="grid grid-cols-1 gap-2 md:grid-cols-3">
             {tabs.map((tab) => {
               const Icon = tab.icon;
@@ -114,7 +114,7 @@ export default function TheBasics() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`flex items-center justify-center gap-3 rounded-2xl px-6 py-5 font-semibold transition-all duration-300 ${
                     activeTab === tab.id
-                      ? "bg-gradient-to-r from-blue-600 to-sky-500 text-white shadow-lg"
+                      ? "bg-gradient-to-r from-blue-600 to-sky-500 text-white"
                       : "text-slate-600 hover:bg-blue-50 hover:text-blue-700"
                   }`}
                 >
@@ -127,7 +127,7 @@ export default function TheBasics() {
         </div>
 
         {/* Content Area */}
-        <div className="mt-12 rounded-[32px] border border-blue-100 bg-white p-8 shadow-xl shadow-blue-100/50 md:p-12">
+        <div className="mt-12 rounded-[32px] border border-blue-100 bg-white p-8 md:p-12">
           <div className="grid gap-10 lg:grid-cols-[1.7fr_0.8fr]">
             {/* Main Content */}
             <div>
@@ -144,7 +144,7 @@ export default function TheBasics() {
 
             {/* Sidebar */}
             <div>
-              <div className="sticky top-24 overflow-hidden rounded-3xl bg-gradient-to-br from-blue-700 via-blue-600 to-sky-500 p-8 text-white shadow-xl">
+              <div className="sticky top-24 overflow-hidden rounded-3xl bg-gradient-to-br from-blue-700 via-blue-600 to-sky-500 p-8 text-white">
                 <div className="mb-6">
                   <p className="text-xs font-bold uppercase tracking-[0.25em] text-blue-100">
                     Quick Summary

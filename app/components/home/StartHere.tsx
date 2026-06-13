@@ -5,16 +5,16 @@ import { ChevronDown } from "lucide-react";
 
 const stats = [
   {
-    value: "7",
+    value: "11",
     label: "Driver Families Explained",
   },
   {
-    value: "40+",
+    value: "60+",
     label: "Plain-English Guides",
   },
   {
-    value: "0",
-    label: "Downloads Hosted",
+    value: "12",
+    label: "Blog Articles Published",
   },
 ];
 

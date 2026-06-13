@@ -22,7 +22,7 @@ export default function Hero() {
       </div>
 
       <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6">
-        <div className="grid gap-8 sm:gap-12 lg:grid-cols-[1.1fr_0.9fr] items-start">
+        <div className="grid gap-8 sm:gap-12 md:grid-cols-[1.1fr_0.9fr] items-start">
           {/* Left Content */}
           <div>
             <div className="mb-4 sm:mb-6 inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-3 sm:px-4 py-1.5 sm:py-2 shadow-sm shadow-slate-200/50">

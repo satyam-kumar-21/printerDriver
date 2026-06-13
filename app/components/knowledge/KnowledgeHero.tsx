@@ -30,7 +30,7 @@ export default function KnowledgeHero() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid items-center gap-10 md:grid-cols-[1.2fr_0.8fr]">
           {/* Left Content */}
           <div>
             {/* Breadcrumb */}

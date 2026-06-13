@@ -18,6 +18,7 @@ import DriverFAQ from '@/app/components/drivers/DriverFAQ'
 import DeviceCodeTable from '@/app/components/drivers/DeviceCodeTable'
 import DriverRepairSteps from '@/app/components/drivers/DriverRepairSteps'
 import DriverFeatureShowcase from '@/app/components/drivers/DriverFeatureShowcase'
+import DriverExplanation from '../../components/drivers/DriverExplanation'
 
 export default function Page() {
     const features = [
@@ -111,6 +112,21 @@ export default function Page() {
 }
     const audioRepairNote =
         "If anything here feels out of your depth, that's a normal feeling. A local technician can run this exact routine in minutes, and nothing on this page requires special tools."
+        
+    const audioExplanation = {
+        title: "What an Audio Driver Does",
+        paragraphs: [
+            "An audio driver moves streams of digital samples between your applications and the sound hardware, keeping everything in time. It manages sample rates, mixes multiple sources, routes audio to the right output, and applies any hardware effects your device supports.",
+            "Get it right and sound is effortless. Get it slightly wrong and you hear crackling, lag, or a microphone that everybody says is too quiet."
+        ],
+        points: [
+            { text: "Carries digital audio samples in both directions" },
+            { text: "Mixes and routes multiple sound sources" },
+            { text: "Manages sample rate, latency, and buffering" },
+            { text: "Selects the correct input and output device" }
+        ]
+    }
+    
     return (
         <main>
             <DriverDetailHero
@@ -121,9 +137,7 @@ export default function Page() {
                 features={features}
                 topics={topics}
             />
-
-            
-
+            <DriverExplanation {...audioExplanation} />
             <DriverFeatureShowcase {...soundProblemsData} />
 
             <DriverRepairSteps

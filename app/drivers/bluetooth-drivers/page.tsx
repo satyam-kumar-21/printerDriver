@@ -14,6 +14,7 @@ import DriverFAQ from '@/app/components/drivers/DriverFAQ'
 import DeviceCodeTable from '@/app/components/drivers/DeviceCodeTable'
 import DriverRepairSteps from '@/app/components/drivers/DriverRepairSteps'
 import DriverFeatureShowcase from '@/app/components/drivers/DriverFeatureShowcase'
+import DriverExplanation from '../../components/drivers/DriverExplanation'
 
 export default function Page() {
   const features = [
@@ -98,6 +99,20 @@ export default function Page() {
 }
   const bluetoothRepairNote =
     "If anything here feels out of your depth, that's a normal feeling. A local technician can run this exact routine in minutes, and nothing on this page requires special tools."
+    
+  const bluetoothExplanation = {
+    title: "What a Bluetooth Driver Does",
+    paragraphs: [
+      "The Bluetooth driver operates your computer's 2.4 GHz short-range radio — but the radio is only the start. Above it sits a software stack that runs discovery (“what's nearby?”), pairing (“do we trust each other?”), and the long-term list of devices your machine remembers.",
+      "Every kind of gadget then speaks its own profile — one for stereo audio, one for keyboards and mice, one for file transfer — and the stack loads the right profile for each connection. That's why one radio can serve your headphones, your mouse, and your phone at once, each in its own dialect, while the driver also manages the radio's power draw so your battery survives."
+    ],
+    points: [
+      { text: "Runs discovery, pairing, and your trusted-device list" },
+      { text: "Speaks the right profile for each gadget — audio, input, file transfer" },
+      { text: "Hands connected audio devices to the system's sound stack" },
+      { text: "Manages radio power so the battery isn't drained" }
+    ]
+  }
   return (
     <main>
       <DriverDetailHero
@@ -110,6 +125,8 @@ export default function Page() {
         features={features}
         topics={topics}
       />
+
+      <DriverExplanation {...bluetoothExplanation} />
 
       <DriverFeatureShowcase {...bluetoothPairingProblemsData} />
 
