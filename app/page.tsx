@@ -12,6 +12,8 @@ import WhyADriverMatter from './components/home/WhyADriverMatter'
 import StartHere from './components/home/StartHere'
 import WantUs from './components/home/WantUs'
 import JsonLd from './components/seo/JsonLd'
+import ScrollSectionHome from './components/home/ScrollSectionHome'
+import TheBasics from './components/home/TheBasics';
 
 function page() {
   const jsonLd = {
@@ -37,6 +39,9 @@ function page() {
     <>
      <JsonLd data={jsonLd} />
      <Hero />
+     <ScrollSectionHome/>
+
+     <TheBasics />
      <WhatWeCover />
      <WhyADriverMatter />
      <StartHere />
