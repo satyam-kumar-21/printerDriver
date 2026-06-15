@@ -10,14 +10,31 @@ import {
   Wifi,
   Bluetooth,
   Usb,
-  Wrench,
+
   Cpu,
   HardDrive,
   Keyboard,
-  Smartphone,
+  Boxes,
+  Layers,
+  Shield,
+
 } from "lucide-react";
 
 const categories = [
+
+  {
+  title: "Kernel-Mode Drivers",
+  slug: "kernel-mode-drivers",
+  icon: Shield,
+  description: "Low-level drivers with direct hardware and memory access."
+},
+{
+  title: "User-Mode Drivers",
+  slug: "user-mode-drivers",
+  icon: Layers,
+  description: "Safer drivers that run separately from the operating system kernel."
+},
+
   {
     title: "Printer Drivers",
     slug: "printer-drivers",
@@ -25,13 +42,7 @@ const categories = [
     description:
       "Installation, updates, compatibility and troubleshooting guides.",
   },
-  {
-    title: "Scanner Drivers",
-    slug: "scanner-drivers",
-    icon: ScanLine,
-    description:
-      "Learn how scanners communicate with your operating system.",
-  },
+  
   {
     title: "Graphics Drivers",
     slug: "graphics-drivers",
@@ -88,13 +99,14 @@ const categories = [
     description:
       "Keyboards, mice, touchpads, and game controller support.",
   },
+
   {
-    title: "Troubleshooting Hub",
-    slug: "troubleshooting",
-    icon: Wrench,
-    description:
-      "Step-by-step fixes for common driver and device problems.",
-  },
+  title: "Virtual Device Drivers",
+  slug: "virtual-device-drivers",
+  icon: Boxes,
+  description: "Software-created devices used by virtualization and emulation tools."
+},
+  
 ];
 
 export default function DriversWhatWeCover() {

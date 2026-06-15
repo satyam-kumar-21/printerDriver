@@ -94,7 +94,7 @@ export default function Page() {
   description2:
     "Stale pairing records cause most refusals: removing the device from the list and pairing fresh clears them. Audio-but-silent is usually a default-output selection, not the radio. The post-sleep vanishing act is typically caused by power management putting the radio into a sleep state it doesn't recover from — adjusting that setting plus installing the latest driver from your laptop maker usually fixes it.",
 
-  image: '/network-fix.svg',
+  image: '/driver/blutoothdriver.webp',
   imageAlt: 'Bluetooth connectivity troubleshooting illustration',
 }
   const bluetoothRepairNote =
@@ -121,7 +121,7 @@ export default function Page() {
         intro={
           "Headphones, mice, keyboards, phones — Bluetooth replaces a drawer full of cables with one short-range radio. The driver and its software stack are what make that radio feel effortless."
         }
-        image="/assets/images/bluetooth-what.svg"
+        image="/driver/blutoothdriver.webp"
         features={features}
         topics={topics}
       />

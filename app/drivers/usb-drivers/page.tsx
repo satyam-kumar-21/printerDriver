@@ -95,7 +95,7 @@ export default function Page() {
   description2:
     "Trying another port, reseating the cable, and reinstalling the device-specific driver from its maker clears up most cases. A surprising number are simply a tired cable or a port stuck in a low-power state after sleep.",
 
-  image: '/network-fix.svg',
+  image: '/driver/usabdriver.webp',
   imageAlt: 'USB device troubleshooting illustration',
 }
 
@@ -124,7 +124,7 @@ export default function Page() {
         intro={
           "Plug something in, and within a second your computer knows what it is and how to talk to it. That little feat of engineering is the USB driver stack at work."
         }
-        image="/assets/images/usb-what.svg"
+        image="/driver/usabdriver.webp"
         features={features}
         topics={topics}
       />

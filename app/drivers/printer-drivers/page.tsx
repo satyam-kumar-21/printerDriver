@@ -46,7 +46,7 @@ export default function Page() {
   description2:
     '“Offline” simply means the computer can’t reach the printer at that moment — a Wi-Fi hiccup, a sleeping device, or a stuck job blocking the queue. Gibberish output usually means the job was rendered with the wrong driver, often a near-match model. The reliable fix is to clear the queue, then reinstall the full driver package for your exact model from the manufacturer’s support page.',
 
-  image: '/network-fix.svg',
+  image: '/driver/printerdrivers.webp',
   imageAlt: 'Printer offline troubleshooting illustration',
 }
     const printerFaqs = [
@@ -121,7 +121,7 @@ export default function Page() {
                 intro={
                     "You click Print, and a small chain of software springs into action — formatting the page, queueing the job, and speaking your printer's exact language. Here's how it works, and how to un-jam it when it doesn't."
                 }
-                image="/assets/images/printer-what.svg"
+                image="/driver/printerandoutputdriver.webp"
                 features={features}
                 topics={topics}
             />

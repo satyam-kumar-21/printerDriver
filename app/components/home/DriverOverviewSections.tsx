@@ -6,74 +6,74 @@ function DriverOverviewSections() {
     {
       title: "Kernel-Mode Drivers",
       description: "Kernel-mode drivers work at the operating system's most trusted level, with direct access to hardware, memory, and system resources. This makes them essential for tasks that demand maximum performance and low latency, like file systems and network protocols, but also means issues here can affect system stability.",
-      image: "/driver/chipestDriver.webp",
-      slug: "chipset-drivers"
+      image: "/driver/kernalmodedriver.webp",
+      slug: "kernel-mode-drivers"
     },
     {
       title: "User-Mode Drivers",
       description: "User-mode drivers operate in a safer, isolated part of the system, separated from the core OS. If something goes wrong, the driver can crash without taking the whole system down. Devices like webcams, scanners, and many USB peripherals often use user-mode drivers.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200&h=600",
-      slug: "usb-drivers"
+      image: "/driver/usermodedriverstack.webp",
+      slug: "usb-mode-drivers"
     },
     {
       title: "Printer & Output Drivers",
       description: "Printer and output drivers translate digital documents into instructions that physical hardware can understand—whether that's a printer, plotter, or label maker. They handle everything from color calibration and paper size to duplex printing and document collation.",
-      image: "https://images.unsplash.com/photo-1587573089734-09cb69c0f2b4?auto=format&fit=crop&q=80&w=1200&h=600",
+      image: "/driver/printerdrivers.webp",
       slug: "printer-drivers"
     },
     {
       title: "Graphics & Display Drivers",
       description: "Graphics drivers are the workhorses behind everything you see on screen. They manage GPU memory, coordinate rendering across thousands of cores, handle refresh rates and display settings, and expose APIs for games and creative software.",
-      image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80&w=1200&h=600",
+      image: "/driver/graphicsdriver.webp",
       slug: "graphics-drivers"
     },
     {
       title: "Audio Drivers",
       description: "Audio drivers handle the flow of sound between your OS and audio hardware. They mix multiple streams, apply effects like EQ or spatial audio, convert between digital and analog signals, and manage power for speakers and microphones.",
-      image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&q=80&w=1200&h=600",
+      image: "/driver/audiodriver.webp",
       slug: "audio-drivers"
     },
     {
       title: "Network Drivers",
       description: "Network drivers connect your computer to the world, managing wired and wireless connections. They handle high-speed data transmission, offload work to your network card, and manage Wi-Fi security and signal quality.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200&h=600",
+      image: "/driver/networkdriver.webp",
       slug: "network-drivers"
     },
     {
       title: "USB & Peripheral Drivers",
       description: "USB drivers form a layered stack that manages everything you plug into a USB port—from keyboards and mice to external drives. They handle device detection, power management, and hot-plugging so you can connect devices on the fly.",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=1200&h=600",
+      image: "/driver/usabdriver.webp",
       slug: "usb-drivers"
     },
     {
       title: "Storage Drivers",
       description: "Storage drivers manage your hard drives, SSDs, and external storage. They translate file requests into hardware commands, optimize performance for flash storage, and handle reliability features like error correction and health monitoring.",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=1200&h=600",
+      image: "/driver/storagedriver.webp",
       slug: "storage-drivers"
     },
     {
       title: "Input Device Drivers",
       description: "Input device drivers translate your physical interactions—typing, clicking, touching—into events the OS understands. They handle keyboards, mice, touchpads, game controllers, and more, including advanced features like gestures and pressure sensitivity.",
-      image: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&q=80&w=1200&h=600",
+      image: "/driver/inputdriver.webp",
       slug: "input-devices"
     },
     {
       title: "Chipset Drivers",
       description: "Chipset drivers are the foundation of your system, managing how your CPU talks to RAM, storage, and other components. They're critical for performance, stability, and enabling features like power management and virtualization.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200&h=600",
+      image: "/driver/chipestDriver.webp",
       slug: "chipset-drivers"
     },
     {
       title: "Bluetooth Drivers",
       description: "Bluetooth drivers manage short-range wireless connections to headphones, speakers, keyboards, and smart devices. They handle the complex Bluetooth stack, including pairing, audio streaming, and low-energy devices like fitness trackers.",
-      image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=1200&h=600",
+      image: "/driver/blutoothdriver.webp",
       slug: "bluetooth-drivers"
     },
     {
       title: "Virtual Device Drivers",
       description: "Virtual drivers create software-only devices that act like real hardware. They're used in virtual machines, VPNs, and emulators, translating guest OS requests into host actions and providing isolated, secure environments.",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=1200&h=600",
-      slug: "troubleshooting"
+      image: "/driver/virtualdriver.webp",
+      slug: "virtual-device-drivers"
     }
   ];
 
@@ -105,11 +105,11 @@ function DriverOverviewSections() {
               href={`/drivers/${section.slug}`}
               className="group overflow-hidden rounded-3xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-2 hover:border-blue-200"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative aspect-video overflow-hidden">
                 <img
                   src={section.image}
                   alt={section.title}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
               </div>

@@ -42,7 +42,7 @@ export default function Page() {
             'Every time you type, click, or move a controller, an input driver is translating that physical action into something your computer understands. When these drivers are outdated or misconfigured, your devices can feel unresponsive or behave unpredictably.',
         description2:
             'For basic keyboards and mice, generic drivers work fine, but installing the manufacturer’s driver unlocks special features like macro keys, RGB customization, and sensitivity adjustments. For gaming, this can make a real difference.',
-        image: '/network-fix.svg',
+        image: '/driver/inputdriver.webp',
         imageAlt: 'Input device driver illustration',
     }
 
@@ -117,7 +117,7 @@ export default function Page() {
                 intro={
                     "From typing an email to playing a game, input device drivers translate your physical actions into digital signals your computer can understand."
                 }
-                image="/network-fix.svg"
+                image="/driver/inputdriver.webp"
                 features={features}
                 topics={topics}
             />

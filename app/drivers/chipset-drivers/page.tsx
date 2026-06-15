@@ -42,7 +42,7 @@ export default function Page() {
             'Chipset drivers don’t get much attention, but they’re the foundation of your system. They teach your operating system exactly how your motherboard is wired, which devices are connected, and how they should talk to each other.',
         description2:
             'When something feels “off” across multiple devices — like USB ports acting weird, sleep not working, or general slowness after an OS update — it’s often the chipset driver. Installing the latest package from your motherboard or laptop maker usually fixes it.',
-        image: '/network-fix.svg',
+        image: '/driver/chipestDriver.webp',
         imageAlt: 'Chipset driver illustration',
     }
 
@@ -117,7 +117,7 @@ export default function Page() {
                 intro={
                     "Chipset drivers are the quiet heroes of your computer. They teach your operating system exactly how your motherboard is wired and how all the pieces should communicate."
                 }
-                image="/network-fix.svg"
+                image="/driver/chipestDriver.webp"
                 features={features}
                 topics={topics}
             />

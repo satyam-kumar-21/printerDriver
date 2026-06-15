@@ -107,7 +107,7 @@ export default function Page() {
   description2:
     'Reinstalling the audio driver from your laptop or motherboard maker, then confirming the right playback and recording devices are set as default, clears up the great majority of everyday audio issues.',
 
-  image: '/network-fix.svg',
+  image: '/driver/audiodriver.webp',
   imageAlt: 'Audio driver troubleshooting illustration',
 }
     const audioRepairNote =
@@ -133,7 +133,7 @@ export default function Page() {
                 title="The Software Behind Every Sound You Hear"
                 breadcrumbs={['Audio Drivers']}
                 intro="When music plays, a video call connects, or a notification chimes, an audio driver is doing precise, sample-accurate work in the background to make it happen."
-                image="/assets/images/audio-what.svg"
+                image="/driver/audiodriver.webp"
                 features={features}
                 topics={topics}
             />

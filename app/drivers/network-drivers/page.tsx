@@ -93,7 +93,7 @@ export default function Page() {
   description2:
     "A fresh driver, paired with a power-management setting that stops the OS from aggressively powering down the network chip, solves most of them. For laptops, your manufacturer's site is almost always the right source, since they tune it for your specific Wi-Fi module.",
 
-  image: '/network-fix.svg',
+  image: '/driver/networkdriver.webp',
   imageAlt: 'Network connectivity troubleshooting illustration',
 }
 
@@ -122,7 +122,7 @@ export default function Page() {
         intro={
           "Every page you load, every video you stream, and every call you join passes through a network driver before it ever reaches your screen."
         }
-        image="/assets/images/network-what.svg"
+        image="/driver/networkdriver.webp"
         features={features}
         topics={topics}
       />

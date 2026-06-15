@@ -95,7 +95,7 @@ export default function Page() {
   description2:
     "A clean reinstall of the latest driver from your graphics card maker resolves the large majority of these issues, because it removes leftovers from previous versions that can quietly conflict. For laptops, your computer maker's site is often the better source, since their build is tuned for your exact panel and power settings.",
 
-  image: '/network-fix.svg',
+  image: '/driver/graphicsdriver.webp',
   imageAlt: 'Display driver troubleshooting illustration',
 }
 
@@ -123,7 +123,7 @@ export default function Page() {
         intro={
           "Every frame on your screen is the result of a quiet conversation between the operating system, the graphics card, and a remarkable piece of software called the graphics driver."
         }
-        image="/assets/images/graphics-what.svg"
+        image="/driver/graphicsdriver.webp"
         features={features}
         topics={topics}
       />

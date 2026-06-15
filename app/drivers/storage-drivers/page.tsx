@@ -42,7 +42,7 @@ export default function Page() {
             'Storage drivers are what make your files open quickly and your system boot fast. They handle the communication between your operating system and your SSD, HDD, or external drive, ensuring data moves safely and efficiently.',
         description2:
             'When a drive feels slower than it should, or isn’t being detected properly, updating or reinstalling the storage driver is often the solution. For NVMe SSDs, the right driver can unlock noticeable speed improvements.',
-        image: '/network-fix.svg',
+        image: '/driver/storagedriver.webp',
         imageAlt: 'Storage driver illustration',
     }
 
@@ -117,7 +117,7 @@ export default function Page() {
                 intro={
                     "From booting your system to loading your files, storage drivers work behind the scenes to ensure your data is accessible quickly and reliably."
                 }
-                image="/network-fix.svg"
+                image="/driver/storagedriver.webp"
                 features={features}
                 topics={topics}
             />

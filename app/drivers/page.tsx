@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { constructMetadata } from '@/app/utils/seo';
 
 export const metadata = constructMetadata({
@@ -5,7 +7,7 @@ export const metadata = constructMetadata({
   description: 'Learn more about drivers at DriverWise. We provide clear, plain-English advice and troubleshooting steps for device drivers.',
 });
 
-import React from 'react'
+
 import DriversHero from '../components/drivers/DriversHero'
 import DriversWhatWeCover from '../components/drivers/DriversWhatWeCover'
 import WantUs from '../components/home/WantUs'
