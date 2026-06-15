@@ -26,50 +26,207 @@ function SitemapContent() {
         <Section title="Main Pages">
           <SitemapGrid>
             <SitemapCard title="Home" href="/" desc="Homepage" />
-            <SitemapCard title="Start Here" href="/start-here" desc="Begin your journey" />
-            <SitemapCard title="Device Drivers" href="/drivers" desc="Full category map" />
+           
+            <SitemapCard title="Drivers" href="/drivers" desc="Full category map" />
             <SitemapCard title="Knowledge Hub" href="/knowledge" desc="Troubleshooting guides" />
             <SitemapCard title="Blog" href="/blog" desc="Articles & explainers" />
             <SitemapCard title="About Us" href="/about" desc="Who we are" />
             <SitemapCard title="Contact" href="/contact" desc="Get in touch" />
           </SitemapGrid>
-        </Section> 
-<br />
+        </Section>
+        <br />
         {/* SECTION 2 */}
         <Section title="Driver Overviews">
           <SitemapGrid>
-            <SitemapCard title="Printer Drivers" href="/drivers/printer" desc="Documents to paper" />
-            <SitemapCard title="Scanner Drivers" href="/drivers/scanner" desc="Paper to pixels" />
-            <SitemapCard title="Graphics Drivers" href="/drivers/graphics" desc="GPU and display" />
-            <SitemapCard title="Audio Drivers" href="/drivers/audio" desc="Sound and microphones" />
-            <SitemapCard title="Wi-Fi & Network Drivers" href="/drivers/network" desc="Wireless & Ethernet" />
-            <SitemapCard title="Bluetooth Drivers" href="/drivers/bluetooth" desc="Pairing & profiles" />
-            <SitemapCard title="USB Drivers" href="/drivers/usb" desc="Plug-and-play" />
+            <SitemapCard
+              title="Kernel-Mode Drivers"
+              href="/drivers/kernel-mode-drivers"
+              desc="Core system and hardware access"
+            />
+
+            <SitemapCard
+              title="User-Mode Drivers"
+              href="/drivers/usb-mode-drivers"
+              desc="Safer isolated driver environment"
+            />
+
+            <SitemapCard
+              title="Printer & Output Drivers"
+              href="/drivers/printer-drivers"
+              desc="Printing and output devices"
+            />
+
+            <SitemapCard
+              title="Graphics & Display Drivers"
+              href="/drivers/graphics-drivers"
+              desc="GPU and display management"
+            />
+
+            <SitemapCard
+              title="Audio Drivers"
+              href="/drivers/audio-drivers"
+              desc="Sound and microphone support"
+            />
+
+            <SitemapCard
+              title="Network Drivers"
+              href="/drivers/network-drivers"
+              desc="Wi-Fi and Ethernet connectivity"
+            />
+
+            <SitemapCard
+              title="USB & Peripheral Drivers"
+              href="/drivers/usb-drivers"
+              desc="USB devices and peripherals"
+            />
+
+            <SitemapCard
+              title="Storage Drivers"
+              href="/drivers/storage-drivers"
+              desc="SSD, HDD and storage controllers"
+            />
+
+            <SitemapCard
+              title="Input Device Drivers"
+              href="/drivers/input-devices"
+              desc="Keyboard, mouse and touch input"
+            />
+
+            <SitemapCard
+              title="Chipset Drivers"
+              href="/drivers/chipset-drivers"
+              desc="Motherboard and chipset communication"
+            />
+
+            <SitemapCard
+              title="Bluetooth Drivers"
+              href="/drivers/bluetooth-drivers"
+              desc="Wireless device connectivity"
+            />
+
+            <SitemapCard
+              title="Virtual Device Drivers"
+              href="/drivers/virtual-device-drivers"
+              desc="Virtual machines and software devices"
+            />
           </SitemapGrid>
         </Section>
-<br />
+        <br />
         {/* SECTION 3 */}
         <Section title="Articles">
           <SitemapGrid>
-            <SitemapCard title="What Is a Driver, Really?" href="/blog/what-is-a-driver" desc="Beginner · 5 min" />
-            <SitemapCard title="Inside a Graphics Driver Update" href="/blog/graphics-driver-update" desc="Graphics · 9 min" />
-            <SitemapCard title="The Hidden World of Audio Drivers" href="/blog/audio-drivers" desc="Audio · 7 min" />
-            <SitemapCard title="Why Your Wi-Fi Is Slower" href="/blog/slow-wifi" desc="Networking · 6 min" />
-            <SitemapCard title="Plug-and-Play, Demystified" href="/blog/plug-and-play" desc="USB · 7 min" />
-            <SitemapCard title="The Quiet Chipset Driver" href="/blog/chipset-driver" desc="System · 8 min" />
-            <SitemapCard title="Kernel-Mode vs User-Mode" href="/blog/kernel-vs-user-mode" desc="Architecture · 8 min" />
+            <SitemapCard
+              title="Inside a Graphics Driver Update"
+              href="/blog/inside-a-graphics-driver-update"
+              desc="Graphics · 9 min"
+            />
+
+            <SitemapCard
+              title="The Hidden World of Audio Drivers"
+              href="/blog/the-hidden-world-of-audio-drivers"
+              desc="Audio · 7 min"
+            />
+
+            <SitemapCard
+              title="Why Your Wi-Fi Is Slower"
+              href="/blog/why-your-wifi-is-slower"
+              desc="Networking · 6 min"
+            />
+
+            <SitemapCard
+              title="Plug-and-Play, Demystified"
+              href="/blog/plug-and-play-demystified"
+              desc="USB · 7 min"
+            />
+
+            <SitemapCard
+              title="The Quiet Importance of the Chipset Driver"
+              href="/blog/the-quiet-chipset-driver"
+              desc="System · 8 min"
+            />
+
+            <SitemapCard
+              title="Kernel-Mode vs User-Mode"
+              href="/blog/kernel-mode-vs-user-mode"
+              desc="Architecture · 8 min"
+            />
+
+            <SitemapCard
+              title="How to Update Drivers Safely"
+              href="/blog/how-to-update-drivers-safely"
+              desc="How-To · 7 min"
+            />
+
+            <SitemapCard
+              title="Why Do Drivers Crash?"
+              href="/blog/why-do-drivers-crash"
+              desc="Troubleshooting · 6 min"
+            />
+
+            <SitemapCard
+              title="SSD Drivers: Do You Need to Update Them?"
+              href="/blog/ssd-drivers-what-you-need-to-know"
+              desc="Storage · 5 min"
+            />
+
+            <SitemapCard
+              title="Why Your Device Stopped Working After the Last Update"
+              href="/blog/why-your-device-stopped-after-update"
+              desc="Troubleshooting · 6 min"
+            />
+
+            <SitemapCard
+              title="Driver Signing Explained"
+              href="/blog/driver-signing-explained"
+              desc="Security · 7 min"
+            />
+
+            <SitemapCard
+              title="Virtual Drivers: What They Do"
+              href="/blog/virtual-drivers-what-they-do"
+              desc="Architecture · 7 min"
+            />
           </SitemapGrid>
         </Section>
-<br />
+        <br />
         {/* SECTION 4 */}
         <Section title="Legal & Policies">
           <SitemapGrid>
-            <SitemapCard title="Privacy Policy" href="/legal/privacy-policy" desc="How we handle data" />
-            <SitemapCard title="Cookie Policy" href="/legal/cookie-policy" desc="Cookies and choices" />
-            <SitemapCard title="Advertising Disclosure" href="/legal/advertising-disclosure" desc="How the site is funded" />
-            <SitemapCard title="Disclaimer" href="/legal/disclaimer" desc="Educational use only" />
-            <SitemapCard title="Terms of Use" href="/legal/terms" desc="Rules of the site" />
-            <SitemapCard title="Accessibility Statement" href="/legal/accessibility" desc="Built for everyone" />
+            <SitemapCard
+              title="Privacy Policy"
+              href="/privacy-policy"
+              desc="How we handle data"
+            />
+
+            <SitemapCard
+              title="Terms of Use"
+              href="/terms-of-use"
+              desc="Rules of the site"
+            />
+
+            <SitemapCard
+              title="Disclaimer"
+              href="/disclaimer"
+              desc="Educational use only"
+            />
+
+            <SitemapCard
+              title="Cookie Policy"
+              href="/cookie-policy"
+              desc="Cookies and choices"
+            />
+
+            <SitemapCard
+              title="Advertising Disclosure"
+              href="/advertising-disclosure"
+              desc="How the site is funded"
+            />
+
+            <SitemapCard
+              title="Accessibility Statement"
+              href="/accessibility"
+              desc="Built for everyone"
+            />
           </SitemapGrid>
         </Section>
 
