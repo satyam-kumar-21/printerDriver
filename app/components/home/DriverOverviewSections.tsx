@@ -6,7 +6,7 @@ function DriverOverviewSections() {
     {
       title: "Kernel-Mode Drivers",
       description: "Kernel-mode drivers work at the operating system's most trusted level, with direct access to hardware, memory, and system resources. This makes them essential for tasks that demand maximum performance and low latency, like file systems and network protocols, but also means issues here can affect system stability.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200&h=600",
+      image: "/driver/chipestDriver.webp",
       slug: "chipset-drivers"
     },
     {
