@@ -117,7 +117,7 @@ export default function EditorsPick() {
                                 </p>
 
                                 <Link
-                                    href="/blog/what-is-a-driver-really"
+                                    href="/"
                                     className="group mt-8 inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-blue-600 to-sky-500 px-7 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1"
                                 >
                                     Read the Full Article
