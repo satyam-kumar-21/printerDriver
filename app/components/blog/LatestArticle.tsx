@@ -49,16 +49,16 @@ export default function LatestArticle() {
               className="group overflow-hidden rounded-3xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-2 hover:border-blue-200"
             >
               <Link href={`/blog/${article.slug}`} className="block">
-                <div className="relative h-64 overflow-hidden bg-slate-100">
+                <div className="relative aspect-video overflow-hidden bg-slate-100">
                   <img
                     src={article.image}
                     alt={article.imageAlt}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
                   />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
 
-                  <div className="absolute left-4 top-4 rounded-full bg-slate-900/90 px-3 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-white">
+                  <div className="absolute right-4 top-4 rounded-full bg-slate-900/90 px-3 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-white">
                     {article.category}
                   </div>
                 </div>

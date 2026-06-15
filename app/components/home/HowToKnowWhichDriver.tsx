@@ -27,7 +27,7 @@ function HowToKnowWhichDriver() {
           <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
             <div className="h-48 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&q=80&w=800&h=400"
+                src="./onWindows.webp"
                 alt="Windows desktop screenshot"
                 className="w-full h-full object-cover"
               />
@@ -50,7 +50,7 @@ function HowToKnowWhichDriver() {
           <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
             <div className="h-48 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80&w=800&h=400"
+                src="./onMac.webp"
                 alt="macOS desktop screenshot"
                 className="w-full h-full object-cover"
               />
@@ -73,7 +73,7 @@ function HowToKnowWhichDriver() {
           <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
             <div className="h-48 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=800&h=400"
+                src="./onLinux.webp"
                 alt="Linux desktop screenshot"
                 className="w-full h-full object-cover"
               />

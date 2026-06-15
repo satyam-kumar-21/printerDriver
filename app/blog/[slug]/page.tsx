@@ -85,7 +85,7 @@ export default async function ArticlePage({ params }: Props) {
       />
 
       {/* Main Article Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-sky-50/50 via-white to-white pb-24 pt-12">
+      <section className="relative overflow-hidden bg-gray-100 pb-24 pt-12">
         {/* Ambient glow */}
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute left-[-15%] top-0 h-[500px] w-[500px] rounded-full bg-blue-200/20 blur-[160px]" />
@@ -100,13 +100,13 @@ export default async function ArticlePage({ params }: Props) {
               <article className="overflow-hidden rounded-3xl border border-slate-200 bg-white">
 
                 {/* Featured Image */}
-                <div className="relative h-64 overflow-hidden bg-slate-100 sm:h-80 lg:h-[420px]">
+                <div className="relative aspect-video overflow-hidden bg-slate-100">
                   <Image
                     src={article.image}
                     alt={article.imageAlt}
                     fill
                     priority
-                    className="object-cover"
+                    className="object-contain"
                   />
 
                   {/* Floating meta pill on image */}

@@ -24,7 +24,7 @@ export const blogArticles: BlogArticle[] = [
     readTime: "9 min read",
     published: "May 21, 2026",
     author: "DriverWise editorial team",
-    image: "/network-fix.svg",
+    image: "/blog/blog_graphicsdriverupdate.webp",
     imageAlt: "Graphics driver update illustration",
 
     title: "Inside a Graphics Driver Update: What Actually Changes",
@@ -72,7 +72,7 @@ The takeaway: a graphics driver update is mostly a smarter compiler and a fresh 
     readTime: "7 min read",
     published: "May 21, 2026",
     author: "DriverWise editorial team",
-    image: "/network-fix.svg",
+    image: "/blog/HiddenWorldofAudioDrivers.webp",
     imageAlt: "Audio driver illustration",
 
     title:
@@ -122,7 +122,7 @@ So before blaming the speakers: check the default device, try a second app, disa
     readTime: "6 min read",
     published: "May 21, 2026",
     author: "DriverWise editorial team",
-    image: "/network-fix.svg",
+    image: "/blog/roommateswifislow.webp",
     imageAlt: "Wi-Fi driver illustration",
 
     title:
@@ -166,7 +166,7 @@ So before blaming the speakers: check the default device, try a second app, disa
     readTime: "7 min read",
     published: "May 21, 2026",
     author: "DriverWise editorial team",
-    image: "/network-fix.svg",
+    image: "/blog/plugandplay.webp",
     imageAlt: "USB driver illustration",
 
     title:
@@ -216,7 +216,7 @@ Swap the cable, try a port directly on the machine, install the maker's driver f
     readTime: "8 min read",
     published: "May 21, 2026",
     author: "DriverWise editorial team",
-    image: "/network-fix.svg",
+    image: "/blog/chipestdriver.webp",
     imageAlt: "Chipset driver illustration",
 
     title:
@@ -266,7 +266,7 @@ It will never be famous. But install it first, from the right source, and a whol
     readTime: "8 min read",
     published: "May 21, 2026",
     author: "DriverWise editorial team",
-    image: "/network-fix.svg",
+    image: "/blog/kernal.webp",
     imageAlt: "Kernel mode driver illustration",
 
     title:
@@ -314,7 +314,7 @@ It will never be famous. But install it first, from the right source, and a whol
     readTime: "7 min read",
     published: "May 22, 2026",
     author: "DriverWise editorial team",
-    image: "/network-fix.svg",
+    image: "/blog/updatedriversafely.webp",
     imageAlt: "Driver update illustration",
 
     title: "How to Update Drivers Safely (Without Breaking Anything)",
@@ -361,7 +361,7 @@ It will never be famous. But install it first, from the right source, and a whol
     readTime: "6 min read",
     published: "May 23, 2026",
     author: "DriverWise editorial team",
-    image: "/network-fix.svg",
+    image: "/blog/dodrivercrash.webp",
     imageAlt: "Driver crash illustration",
 
     title: "Why Do Drivers Crash? (And What You Can Do About It)",
@@ -408,7 +408,7 @@ It will never be famous. But install it first, from the right source, and a whol
     readTime: "5 min read",
     published: "May 24, 2026",
     author: "DriverWise editorial team",
-    image: "/network-fix.svg",
+    image: "/blog/ssddriver.webp",
     imageAlt: "SSD driver illustration",
 
     title: "SSD Drivers: Do You Need to Update Them?",
@@ -451,7 +451,7 @@ It will never be famous. But install it first, from the right source, and a whol
     readTime: "6 min read",
     published: "May 25, 2026",
     author: "DriverWise editorial team",
-    image: "/network-fix.svg",
+    image: "/blog/devicestopworking.webp",
     imageAlt: "Device stopped working after update illustration",
 
     title: "Why Your Device Stopped Working After the Last Update",
@@ -494,7 +494,7 @@ It will never be famous. But install it first, from the right source, and a whol
     readTime: "7 min read",
     published: "May 26, 2026",
     author: "DriverWise editorial team",
-    image: "/network-fix.svg",
+    image: "/blog/driversigning.webp",
     imageAlt: "Driver signing explained illustration",
 
     title: "Driver Signing: Why Your Computer Cares Who Made the Software",
@@ -537,7 +537,7 @@ It will never be famous. But install it first, from the right source, and a whol
     readTime: "7 min read",
     published: "May 27, 2026",
     author: "DriverWise editorial team",
-    image: "/network-fix.svg",
+    image: "/blog/virtualdriver.webp",
     imageAlt: "Virtual drivers explained illustration",
 
     title: "Virtual Drivers: When the 'Hardware' Is Not Hardware At All",
