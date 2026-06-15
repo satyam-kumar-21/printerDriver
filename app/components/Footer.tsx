@@ -76,7 +76,9 @@ export default function Footer() {
               <Link href="/drivers/printer-drivers" className="block hover:text-slate-900 transition">
                 Printer Drivers
               </Link>
-              
+               <Link href="/drivers/scanner-drivers" className="block hover:text-slate-900 transition">
+                Scanner Drivers
+              </Link>
               <Link href="/drivers/graphics-drivers" className="block hover:text-slate-900 transition">
                 Graphics Drivers
               </Link>
